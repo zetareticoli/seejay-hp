@@ -1,0 +1,22 @@
+# Ignore hidden folders
+# This takes care of .tmp, .sass-cache, and many others #
+.*/
+
+# Ignore OS generated files
+.DS_Store*
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Thumbnail cache files
+._*
+Thumbs.db
+
+# Ignore dist folder
+/dist
+# Node
+node_modules
+npm-debug.log
+
+# Do not ignore .gitkeep in ignored directories
+!.gitkeep
