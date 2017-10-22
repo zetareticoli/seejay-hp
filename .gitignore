@@ -20,3 +20,7 @@ npm-debug.log
 
 # Do not ignore .gitkeep in ignored directories
 !.gitkeep
+
+# SSH files
+*.pub
+ssh-key
