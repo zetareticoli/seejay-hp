@@ -1,0 +1,122 @@
+// scss-lint:disable SpaceAfterVariableName
+// $VARIABLES ---------------------------------------------------------------//
+
+// COLORS ======================================================================
+
+// Base colors -------------------------------------------------------------- //
+$color-white       : #fff;
+$color-black       : #212121;
+$color-mandarin    : #ffbe26;
+$color-red         : #f2463d;
+$color-green       : #50ae55;
+$color-lightblue   : #3277c7;
+$color-purple      : #b75dc7;
+$color-pink        : #f291b2;
+$color-firebrick   : #b22222;
+$color-orange      : #ffa000;
+$color-forestgreen : #228b22;
+$color-steelblue   : #2e6d9d;
+$color-magenta     : #e91f63;
+$color-mint        : #00bfa5;
+$color-blue        : #01579b;
+$color-gray        : #e0e0e0;
+
+// Gray scale --------------------------------------------------------------- //
+$color-gray-10  : #fafafa;
+$color-gray-20  : #f5f5f5;
+$color-gray-30  : #eee;
+$color-gray-40  : #e0e0e0;
+$color-gray-50  : #bdbdbd;
+$color-gray-60  : #9e9e9e;
+$color-gray-70  : #757575;
+$color-gray-80  : #616161;
+$color-gray-90  : #424242;
+$color-gray-100 : #212121;
+
+// State colors --------------------------------------------------------------//
+$error   : $color-firebrick;
+$warning : $color-orange;
+$valid   : $color-forestgreen;
+
+// Social colors -------------------------------------------------------------//
+$color-facebook   : #3b5998;
+$color-twitter    : #55acee;
+$color-googleplus : #bc3010;
+$color-instagram  : #517fa4;
+$color-flickr     : #ff0084;
+$color-youtube    : #ef450f;
+$color-telegram   : #08c;
+
+// UI Color ------------------------------------------------------------------//
+$border-color       : $color-gray-40;
+$link-color         : $color-steelblue;
+$body-color         : $color-gray-90;
+$background-primary : $color-blue;
+
+
+// TYPOGRAPHY ==================================================================
+
+$line-height-base: 1.5;
+
+// Font size -----------------------------------------------------------------//
+$font-size-giant  : 3rem;    // 48px
+$font-size-big    : 2.25rem; // 36px
+$font-size-double : 2rem;    // 32px
+$font-size-xhigh  : 1.75rem; // 28px
+$font-size-high   : 1.5rem;  // 24px
+$font-size-xxbase : 1.25rem; // 20px
+$font-size-xbase  : 1.125rem;// 18px
+$font-size-base   : 1rem;    // 16px
+$font-size-low    : .875rem; // 14px
+$font-size-little : .75rem;  // 12px
+$font-size-tiny   : .625rem; // 10px
+
+// Font weight ---------------------------------------------------------------//
+$font-weight-normal : 400;
+$font-weight-medium : 500;
+$font-weight-bold   : 700;
+$font-weight-black  : 900;
+
+// Font family ---------------------------------------------------------------//
+
+
+// MEASURES ====================================================================
+
+// Base ----------------------------------------------------------------------//
+$space: 1rem;
+$baseline       : .5rem;
+$gutterwidth    : $space;
+$baselineheight : 1.5rem;
+
+// Lists of measures ---------------------------------------------------------//
+$measure:
+  'none',
+  'eighth',
+  'quarter',
+  'half',
+  'base',
+  'and-half',
+  'double',
+  'quad';
+
+// Map of breakpoints --------------------------------------------------------//
+$breakpoints: (
+  xsmall : 20rem,
+  small  : 30rem,
+  medium : 46.25rem,
+  large  : 62.5rem,
+  xlarge : 312.5rem,
+);
+
+// Shapes --------------------------------------------------------------------//
+$base-border-style   : solid;
+$dotted-border-style : dotted;
+$base-border-width   : 1px;
+$input-border-width  : 2px;
+$input-border-radius : 3px;
+$base-radius         : 3px;
+$input-border-radius : $base-radius;
+
+// ANIMATIONS ==================================================================
+
+$default-timing : .3s;

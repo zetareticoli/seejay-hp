@@ -1,0 +1,50 @@
+// $LAYOUT --------------------------------------------------------------------/
+
+.container {
+  padding: 0 30px;
+  width: 100%;
+
+  &--fixed {
+    padding: 30px;
+    @include bp(large) {
+      margin: 0 auto;
+      max-width: 800px;
+    }
+  }
+}
+
+.section {
+  margin: 0;
+  position: relative;
+
+  &--overlap {
+    margin-top: -2em;
+  }
+
+  &--inverse {
+    background-color: #ccc;
+  }
+}
+
+// $Lists ---------------------------------------------------------------------/
+//
+.l-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  @include flexbox;
+  @include flex-wrap(nowrap);
+
+  &--wrap {
+    @include flex-wrap(wrap);
+  }
+
+  &__item {
+      @include flex(1 1 auto);
+
+    .l-list--wrap & {
+      width: 16%;
+    }
+  }
+
+}
