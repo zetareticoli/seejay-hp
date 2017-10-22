@@ -14,16 +14,12 @@
     ],
     "dest"  : "dist/assets/js/"
   },
-  "scss": {
+  "sass": {
     "files": [
-      "src/assets/stylesheets/*",
-      "src/assets/stylesheets/**/*",
-      "!src/assets/stylesheets/settings/",
-      "!src/assets/stylesheets/tools/",
-      "!src/assets/stylesheets/generic/",
-      "!src/assets/stylesheets/base/"
+      "src/assets/sass/*",
+      "src/assets/sass/**/*"
     ],
-    "dest" : "dist/assets/stylesheets/"
+    "dest" : "dist/assets/css/"
   },
   "fonts": {
     "base" : "src/assets/webfonts/",
@@ -33,31 +29,22 @@
     "dest" : "dist/assets/webfonts/"
   },
   "images": {
-    "base" : "src/assets/images/",
+    "base" : "src/assets/img/",
     "files": [
-      "src/assets/images/*",
-      "src/assets/images/**/*"
+      "src/assets/img/*",
+      "src/assets/img/**/*"
     ],
-    "dest" : "dist/assets/images/"
+    "dest" : "dist/assets/img/"
   },
   "pages": {
-    "base" : "src/pages",
     "files": [
-      "src/pages/**/*"
+      "src/*.html"
     ]
   },
   "partials": {
-    "base" : "src/templates/partials",
+    "base" : "src/partials/",
     "files": [
-      "src/templates/partials/**/*"
-    ]
-  },
-  "lib": {
-    "dest" : "dist/lib/",
-    "files" : [
-      "node_modules/fullpage.js/dist/jquery.fullpage.min.js",
-      "node_modules/fullpage.js/dist/jquery.fullpage.min.css",
-      "node_modules/jquery/dist/jquery.min.js"
+      "src/partials/**/*"
     ]
   }
 }

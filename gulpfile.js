@@ -3,7 +3,7 @@ var gulp            = require('gulp'),
     browserSync     = require('browser-sync').create(),
     clean           = require('gulp-clean'),
     nunjucksRender  = require('gulp-nunjucks-render'),
-    scss            = require('gulp-sass'),
+    sass            = require('gulp-sass'),
     data            = require('gulp-data'),
     reload          = browserSync.reload;
 var fs              = require('fs');
@@ -17,10 +17,10 @@ gulp.task('clean', function () {
 });
 
 // Task: Scss files
-gulp.task('scss', function () {
-  return gulp.src(config.scss.files)
-    .pipe(scss().on('error', scss.logError))
-    .pipe(gulp.dest(config.scss.dest))
+gulp.task('sass', function () {
+  return gulp.src(config.sass.files)
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest(config.sass.dest))
     .pipe(reload({stream: true}));
 });
 
@@ -40,13 +40,6 @@ gulp.task('fonts', function () {
       config.fonts.dest
     ))
     .pipe(browserSync.reload({stream:true}));
-});
-
-gulp.task('lib', function(){
-  return gulp.src(config.lib.files)
-    .pipe(gulp.dest(
-      config.lib.dest
-    ));
 });
 
 // Task: Handle scripts
@@ -76,8 +69,8 @@ gulp.task('watch', function () {
 
   // Watch scss files
   gulp.watch(
-    config.scss.files,
-    ['scss']
+    config.sass.files,
+    ['sass']
   );
 
   // Watch images files
@@ -136,11 +129,10 @@ gulp.task('browser-sync', function() {
 // Task: Start server
 gulp.task('start', ['clean'], function() {
   gulp.start(
-    'scss',
+    'sass',
     'images',
     'fonts',
     'js',
-    'lib',
     'template',
     'watch',
     'browser-sync'
