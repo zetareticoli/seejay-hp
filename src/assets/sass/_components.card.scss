@@ -1,0 +1,11 @@
+// $CARDS ---------------------------------------------------------------------/
+
+.c-card {
+  background-color: #fff;
+  border-bottom: 2px solid yellow;
+  margin-bottom: 50px;
+
+  @include bp(medium) {
+    margin-bottom: 100px;
+  }
+}

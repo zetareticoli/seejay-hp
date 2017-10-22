@@ -1,0 +1,10 @@
+// $TIMESLOT ------------------------------------------------------------------/
+
+.c-timeslot {
+    position: relative;
+    color: #fff;
+    margin-bottom: 100px;
+    @include flexbox;
+    @include flex-flow(column);
+    padding-top: 0
+}
