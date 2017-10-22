@@ -1,5 +1,119 @@
 {
   "hero": {
-    "title": "Creatività, tecnologia e innovazione sono il nostro dna"
-  }
+    "title": "Creatività, tecnologia e innovazione sono il nostro dna",
+    "intro": "Realizziamo strategie e prodotti digitali di successo"
+  },
+  "about": {
+    "intro": "Siamo una fucina di talenti nata in Sicilia alle pendici dell’Etna. Ai clienti trasmettiamo l’accoglienza e il calore della nostra terra."
+  },
+  "services": [
+    {
+      "title": "Ideiamo e realizziamo\u2028strumenti innovativi per il social media marketing ",
+      "intro": "Proponiamo strumenti e soluzioni proprietarie e tecnologicamente all’avanguardia in grado di far crescere il tuo business.",
+      "details": [
+        {
+          "title": "Twitter Promote"
+        },
+        {
+          "title": "Social Wall"
+        },
+        {
+          "title": "Instagram Booster"
+        }
+      ]
+    },
+    {
+      "title": "Sviluppiamo \u2028prodotti web e mobile scalabili \u2028ed efficienti",
+      "intro": "Scegliamo solo le soluzioni più innovative e performanti ponendo un’attenzione particolare al design dei prodotti che creiamo.",
+      "details": [
+        {
+          "title": "Realtà virtuale e 3D"
+        },
+        {
+          "title": "E-commerce e siti web"
+        },
+        {
+          "title": "Chatbot"
+        },
+        {
+          "title": "App mobile"
+        }
+      ]
+    },
+    {
+      "title": "Trasmettiamo \u2028le nostre competenze ad aziende e professionisti che vogliono crescere",
+      "intro": "Attraverso la condivisione delle nostre esperienze tecniche, gestionali e metodologiche aiutiamo aziende e professionisti a migliorare il proprio obiettivo di business.",
+      "details": [
+        {
+          "title": "Digital Transformation"
+        },
+        {
+          "title": "Business Consulting"
+        },
+        {
+          "title": "Formazione e Coaching"
+        }
+      ]
+    }
+  ],
+  "callout": "Come possiamo aiutarti? Raccontaci la tua idea o il tuo progetto",
+  "brands": [
+    {
+      "alt": "Logo Enel",
+      "src": "assets/img/logo-enel.png"
+    },
+    {
+      "alt": "Logo Becks",
+      "src": "assets/img/logo-becks.png"
+    },
+    {
+      "alt": "Logo Cocacola",
+      "src": "assets/img/logo-cocacola.png"
+    },
+    {
+      "alt": "Logo Decathlon",
+      "src": "assets/img/logo-decathlon.png"
+    },
+    {
+      "alt": "Logo LG",
+      "src": "assets/img/logo-lg.png"
+    },
+    {
+      "alt": "Logo RCS",
+      "src": "assets/img/logo-rcs.png"
+    },
+    {
+      "alt": "Logo Scavolini",
+      "src": "assets/img/logo-scavolini.png"
+    },
+    {
+      "alt": "Logo Sisal",
+      "src": "assets/img/logo-sisal.png"
+    },
+    {
+      "alt": "Logo Sisley",
+      "src": "assets/img/logo-sisley.png"
+    },
+    {
+      "alt": "Logo Uber",
+      "src": "assets/img/logo-uber.png"
+    }
+  ],
+  "history": [
+    {
+      "year": "2013",
+      "title": "L'inizio",
+      "desc": "Seejay nasce a Catania come start-up di tecnologia e comunicazione, attivando sin da subito importanti collaborazioni con realtà nazionali di piccole, medie e grandi dimensioni. "
+    },
+    {
+      "year": "2014-2017",
+      "title": "La crescita",
+      "desc": "Sviluppiamo il nostro Social Wall, un tool di marketing e storytelling unico in Italia. Il numero di clienti che affidano a Seejay le loro campagne sui social media cresce costantemente, tra cui Uber, Decathlon, Sisal \ne molti altri ancora."
+    },
+    {
+      "year": "2017",
+      "title": "Evoluzione",
+      "desc": "Grazie al solido background e a un team eterogeneo di specialisti in costante aggiornamento, Seejay si evolve in una fucina di soluzioni digitali e web marketing per ogni esigenza."
+    }
+  ]
 }

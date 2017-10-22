@@ -11,8 +11,9 @@
         <link rel="apple-touch-icon" href="icon.png">
         <!-- Place favicon.ico in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/timeslot.css">
+
     </head>
     <body>
         <!--[if lte IE 9]>
@@ -22,7 +23,7 @@
         <!-- Add your site or application content here -->
         <div class="page">
 
-          <section class="s-hero">
+          <section class="section c-hero">
             <div class="container">
               <div class="o-payoff">
                 social jokers &amp; developers
@@ -30,12 +31,81 @@
               <div class="o-brand">
                 seejay
               </div>
-              <h1>{{ hero.title }}</h1>
+              <h1 class="c-hero__title">{{ hero.title }}</h1>
+              <p class="c-hero__intro">{{ hero.intro }}</p>
             </div>
           </section>
 
-        </div>
+          <section class="section section--overlap">
+            <div class="container">
+              <div class="c-intro u-align-centre">
+                <p class="o-paragraph-intro">{{ about.intro }}</p>
+                <a class="c-btn c-btn--underline" href="#section-about">La nostra storia</a>
+              </div>
+            </div>
+          </section>
 
+          <div class="u-align-centre">
+            <h5>Cosa facciamo</h5>
+          </div>
+
+          <section class="section section--inverse u-space-vertical">
+            <div class="container">
+
+              {% for item in services %}
+                <div class="c-card">
+                  <div class="container--fixed">
+                    <h2 class="c-card__title">{{ item.title }}</h2>
+                    <p class="c-card__intro">{{ item.intro }}</p>
+                    <ul class="l-list l-list--inline">
+                      {% for detail in item.details %}
+                        <li class="l-list__item c-card__detail">
+                          <!-- SVG icon here -->
+                          <h3 class="detail__title">{{ detail.title }}</h3>
+                        </li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+                </div>
+              {% endfor %}
+
+              <div class="c-callout u-align-centre">
+                <p class="c-callout__title">{{ callout }}</p>
+                <a href="#" class="c-btn" alt="Contattaci">Contattaci</a>
+              </div>
+
+            </div>
+          </section>
+
+          <section class="section u-align-centre u-space-vertical">
+            <h5>Ci hanno già scelto</h5>
+            <ul class="l-list l-list--wrap">
+              {% for brand in brands %}
+                <li class="l-list__item"><img class="u-transp" src="{{ brand.src }}" alt="{{ brand.alt }}"></li>
+              {% endfor %}
+            </ul>
+          </section>
+
+          <div class="container">
+            <section class="section section--inverse u-align-centre u-space-vertical">
+              <h3>Chi siamo</h3>
+              <ul class="l-list l-list--wrap">
+                {% for item in history %}
+                <li class="c-timeslot">
+                	<h2>
+                		<span class="c-timeslot__year">{{ item.year }}</span>
+                		<span class="c-timeslot__title">{{ item.title }}</span>
+                	</h2>
+                	<p class="c-timeslot__story">
+                    {{ item.desc }}
+                	</p>
+              	</li>
+                {% endfor %}
+              </ul>
+            </section>
+          </div>
+
+        </div>
 
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
