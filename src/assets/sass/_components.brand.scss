@@ -1,5 +1,9 @@
 // $CARDS ---------------------------------------------------------------------/
 
-.c-brands {
-  width: 80vw;
+.c-brand {
+  width: 6rem;
+
+  @include bp(medium) {
+    float: right;
+  }
 }
