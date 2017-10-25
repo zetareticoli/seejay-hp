@@ -25,4 +25,10 @@
       background-size: auto;
     }
   }
+
+    &__title,
+    &__intro {
+      position: relative;
+      z-index: 1;
+    }
 }
