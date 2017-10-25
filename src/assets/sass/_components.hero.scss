@@ -9,6 +9,10 @@
     height: 50vh;
   }
 
+  @include bp(large) {
+    padding-left: 100px;
+  }
+
   &::after {
     content: '';
     display: block;
@@ -26,9 +30,28 @@
     }
   }
 
-    &__title,
-    &__intro {
-      position: relative;
-      z-index: 1;
-    }
+  &__payoff {
+    font-size: 72px;
+    font-weight: 700;
+    font-style: italic;
+    color: #FFE25E;
+    letter-spacing: -1.29px;
+    line-height: 56px;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__title,
+  &__intro {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__title {
+    font-style: italic;
+    font-size: 56px;
+    color: $color-white;
+    letter-spacing: -1px;
+    line-height: 1;
+  }
 }
