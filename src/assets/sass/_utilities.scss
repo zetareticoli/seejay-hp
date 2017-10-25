@@ -13,7 +13,11 @@
 }
 
 .u-space-vertical {
-  padding: 100px 0;
+  padding: 50px 0;
+
+  @include bp(medium) {
+    padding: 100px 0;
+  }
 }
 
 .u-transp {

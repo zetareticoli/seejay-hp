@@ -1,8 +1,12 @@
 // $LAYOUT --------------------------------------------------------------------/
 
 .container {
-  padding: 0 30px;
+  padding: 0 15px;
   width: 100%;
+
+  @include bp(medium) {
+    padding: 0 30px;
+  }
 
   &--fixed {
     padding: 30px;
