@@ -1,9 +1,17 @@
 // $CARDS ---------------------------------------------------------------------/
 
 .c-brand {
-  width: 6rem;
+  margin-top: 2vh;
+  width: 20vw;
+  @include transition(width .2 ease);
 
   @include bp(medium) {
     float: right;
+    width: 12vw;
+  }
+
+  @include bp(large) {
+    float: right;
+    max-width: 150px;
   }
 }
