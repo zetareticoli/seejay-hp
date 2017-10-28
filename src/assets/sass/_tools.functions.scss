@@ -1,0 +1,16 @@
+// Viewport units on viewport width ----------------------------------------- //
+
+@function get-vw-bp-small($target) {
+  $vw-context: (375 * 0.01) * 1px;
+  @return ($target / $vw-context) * 1vw;
+}
+
+@function get-vw-bp-medium($target) {
+  $vw-context: (768 * 0.01) * 1px;
+  @return ($target / $vw-context) * 1vw;
+}
+
+@function get-vw-bp-large($target) {
+  $vw-context: (1280 * 0.01) * 1px;
+  @return ($target / $vw-context) * 1vw;
+}

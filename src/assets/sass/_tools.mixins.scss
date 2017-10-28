@@ -415,10 +415,3 @@ $prefix-for-spec:      true !default;
 @mixin user-select($value: none) {
   @include prefixer(user-select, $value, webkit moz ms spec);
 }
-
-// Viewport units on viewport width ----------------------------------------- //
-
-@function get-vw($target) {
-  $vw-context: (1366 * 0.01) * 1px;
-  @return ($target / $vw-context) * 1vw;
-}
