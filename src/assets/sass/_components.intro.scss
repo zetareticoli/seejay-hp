@@ -1,6 +1,24 @@
 // $INTRO ---------------------------------------------------------------------/
 
 .c-intro {
-  background-color: #ccc;
+  @include align-items(center);
+  background: #EFEDE6 url('/assets/img/background-intro.png') 0 0 no-repeat;
+  @include flexbox;
+  @include flex-direction(column);
+  font-family: $font-serif;
+  font-size: get-vw-bp-small(20px);
+  font-style: italic;
+  line-height: $line-height-base;
+  min-height: 300px;
+  @include justify-content(center);
+  padding: 10vw;
   z-index: 999;
+
+  @include bp(medium) {
+    font-size: get-vw-bp-medium(36px);
+  }
+
+  @include bp(large) {
+    font-size: get-vw-bp-large(36px);
+  }
 }
