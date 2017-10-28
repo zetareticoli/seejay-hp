@@ -2,12 +2,13 @@
 
 .c-brand {
   margin-top: 2vh;
-  width: 20vw;
+  margin-bottom: 2vh;
+  width: 30vw;
   @include transition(width .2 ease);
 
   @include bp(medium) {
     float: right;
-    width: 12vw;
+    width: 20vw;
   }
 
   @include bp(large) {
