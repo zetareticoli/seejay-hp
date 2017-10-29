@@ -4,7 +4,7 @@
   color: #fff;
   margin-top: 0;
   min-height: 200px;
-  margin-bottom: 0;
+  margin-bottom: 2rem;
   @include flexbox;
   @include flex-direction(column);
   position: relative;
@@ -13,6 +13,10 @@
     margin-bottom: 100px;
     @include flex-flow(row);
     padding-top: 0
+  }
+
+  &:first-child {
+    margin-top: 2rem;
   }
 
   &::after {
@@ -32,11 +36,15 @@
     display: block;
     position: absolute;
     left: 50%;
-    background-color: $color-yellow;
+    background-color: transparentize($color-yellow, 0.8);
     top: -2rem;
-    height: 150%;
+    height: 120%;
     width: 2px;
     z-index: 0;
+
+    @include bp(medium) {
+      height: 150%;
+    }
   }
 
   &__desc,
@@ -52,12 +60,12 @@
     font-size: get-vw-bp-small(32px);
 
     @include bp(medium) {
-      font-size: get-vw-bp-medium(32px);
+      font-size: get-vw-bp-medium(40px);
       padding-right: 4rem;
     }
 
     @include bp(large) {
-      font-size: get-vw-bp-medium(32px);
+      font-size: get-vw-bp-medium(40px);
     }
 
     @include bp(xlarge) {
@@ -84,7 +92,7 @@
     font-size: 1.25rem;
     line-height: 1.5;
     padding: 0 2rem;
-    text-align: justify;
+    text-align: left;
 
     @include bp(large) {
       padding: 0 4rem;
@@ -92,9 +100,11 @@
   }
 
   &__title {
+    margin-top: 60px;
     text-align: center;
 
     @include bp(medium) {
+      margin-top: 0;
       text-align: right;
     }
   }
