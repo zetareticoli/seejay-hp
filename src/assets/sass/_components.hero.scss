@@ -7,7 +7,7 @@
 
   @include bp(large) {
     height: 80vh;
-    padding: 8vh 4vh 0
+    padding: 8vh 4vh 0;
   }
 
   &::after {
@@ -33,9 +33,10 @@
   }
 
   &__payoff {
-    font-size: get-vw-bp-small(32px);
-    font-style: italic;
-    font-weight: 700;
+    font-family: $font-sans;
+    font-size: get-vw-bp-small(32px); // $todo - use variable
+    font-style: italic; // $todo - use variable
+    font-weight: 700; // $todo - use variable
     color: #FFE25E;
     letter-spacing: -1px;
     line-height: 0.9;
@@ -43,11 +44,11 @@
     z-index: 1;
 
     @include bp(medium) {
-      font-size: get-vw-bp-small(28px);
+      font-size: get-vw-bp-small(28px); // $todo - use variable
     }
 
     @include bp(large) {
-      font-size: get-vw-bp-large(72px);
+      font-size: get-vw-bp-large(56px); // $todo - use variable
     }
   }
 
@@ -61,32 +62,33 @@
 
   &__title {
     font-style: italic;
-    font-size: get-vw-bp-small(32px);
+    font-size: get-vw-bp-small(42px); // $todo - use variable
     color: $color-white;
     line-height: 1.15;
 
     @include bp(medium) {
-      font-size: get-vw-bp-medium(56px);
+      font-size: get-vw-bp-medium(72px); // $todo - use variable
     }
 
     @include bp(large) {
-      font-size: get-vw-bp-medium(36px);
+      font-size: get-vw-bp-medium(36px); // $todo - use variable
       width: 70vw;
     }
   }
 
   &__intro {
     color: $color-white;
-    line-height: 1.25;
-    font-size: get-vw-bp-small(24px);
-    margin-bottom: 10vh;
+    line-height: 1.25; // $todo - use variable
+    font-family: $font-sans;
+    font-size: get-vw-bp-small(28px); // $todo - use variable
+    margin-bottom: 10vh; // $todo - use variable
 
     @include bp(medium) {
-      font-size: get-vw-bp-medium(32px);
+      font-size: get-vw-bp-medium(40px); // $todo - use variable
     }
 
     @include bp(large) {
-      font-size: get-vw-bp-large(36px);
+      font-size: get-vw-bp-large(36px); // $todo - use variable
     }
   }
 }
@@ -95,13 +97,13 @@
   display: block;
 
   &:last-child {
-    padding-left: 5%;
+    padding-left: 5%; // $todo - use variable
   }
 }
 
 .payoff__ampersand {
   color: $color-white;
   font-family: $font-serif;
-  font-size: 65%;
+  font-size: 65%; // $todo - use variable
   font-style: normal;
 }

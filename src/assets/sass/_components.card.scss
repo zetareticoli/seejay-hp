@@ -1,11 +1,75 @@
 // $CARDS ---------------------------------------------------------------------/
 
 .c-card {
-  background-color: #fff;
-  border-bottom: 2px solid yellow;
-  margin-bottom: 50px;
+  background-color: $color-white;
+  border-bottom: 2px solid $color-yellow;
+  margin-bottom: 5rem;
 
-  @include bp(medium) {
-    margin-bottom: 100px;
+  @include bp(large) {
+    margin-bottom: 10rem;
+  }
+
+  &:first-child {
+    margin-top: 6vh;
+  }
+
+  &__evidence,
+  &__detail {
+    color: $color-red;
+  }
+
+  &__detail {
+    font-size: get-vw-bp-small(24px); // $todo - use variable
+    font-weight: $font-weight-normal;
+
+    @include bp(medium) {
+      font-size: get-vw-bp-medium(24px); // $todo - use variable
+    }
+
+    @include bp(large) {
+      font-size: get-vw-bp-large(32px); // $todo - use variable
+    }
+  }
+
+  &__evidence {
+    display: block;
+    font-weight: $font-weight-black;
+  }
+
+  &__intro {
+    font-family: $font-serif;
+    font-style: italic;
+    font-size: get-vw-bp-small(22px); // $todo - use variable
+    line-height: 1.35;
+
+    @include bp(medium) {
+      font-size: get-vw-bp-medium(22px); // $todo - use variable
+    }
+
+    @include bp(xlarge) {
+      font-size: get-vw-bp-large(28px); // $todo - use variable
+    }
+  }
+
+  &__title {
+    font-size: get-vw-bp-small(32px); // $todo - use variable
+    font-weight: $font-weight-normal;
+    line-height: 1;
+    margin-top: -3.5rem;
+
+    @include bp(medium) {
+      font-size: get-vw-bp-medium(40px); // $todo - use variable
+      margin-top: -5rem;
+    }
+
+    @include bp(large) {
+      margin-top: -6.5rem;
+      font-size: get-vw-bp-large(56px); // $todo - use variable
+    }
+
+    @include bp(xlarge) {
+      margin-bottom: 3.5rem;
+      margin-top: -8.5rem;
+    }
   }
 }

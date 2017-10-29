@@ -3,22 +3,32 @@
 .c-intro {
   @include align-items(center);
   background: #EFEDE6 url('/assets/img/background-intro.png') 0 0 no-repeat;
+  background-size: cover;
   @include flexbox;
   @include flex-direction(column);
-  font-family: $font-serif;
-  font-size: get-vw-bp-small(20px);
-  font-style: italic;
-  line-height: $line-height-base;
-  min-height: 300px;
+  font-size: get-vw-bp-small(24px); // $todo - use variable
   @include justify-content(center);
-  padding: 10vw;
+  margin-bottom: 5vh;
+  min-height: 350px;
+  padding: 0 10vw;
   z-index: 999;
 
   @include bp(medium) {
-    font-size: get-vw-bp-medium(36px);
+    font-size: get-vw-bp-medium(36px); // $todo - use variable
+    min-height: 400px;
   }
 
   @include bp(large) {
-    font-size: get-vw-bp-large(36px);
+    font-size: get-vw-bp-large(36px); // $todo - use variable
+  }
+
+  @include bp(xlarge) {
+    min-height: 585px;
+  }
+
+  .o-paragraph-intro {
+    font-family: $font-serif;
+    font-style: italic; // $todo - use variable
+    line-height: 1.25;
   }
 }
