@@ -1,18 +1,21 @@
 // $LAYOUT --------------------------------------------------------------------/
 
 .container {
-  padding: 0 15px;
+  padding: 0 15px; // $todo - use variable
   width: 100%;
 
   @include bp(medium) {
-    padding: 0 30px;
+    padding: 0 30px; // $todo - use variable
   }
 
   &--fixed {
-    padding: 30px;
+    padding: 5vw;
+
     @include bp(large) {
       margin: 0 auto;
-      max-width: 800px;
+      max-width: 880px;
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 }
@@ -23,33 +26,54 @@
 
   // Section global modifiers
   &--overlap {
-    margin-top: -2em;
+    margin-top: -2em; // $todo - use variable
   }
 
   &--inverse {
-    background-color: #ccc;
+    background-color: $background-light-color;
   }
 }
 
 // $Lists ---------------------------------------------------------------------/
 //
-.l-list {
+.o-list {
   margin: 0;
   padding: 0;
   list-style: none;
   @include flexbox;
   @include flex-wrap(nowrap);
 
+  &__item {
+    @include flex(1 1 auto);
+  }
+
+  // Wrap a flexbox list
   &--wrap {
     @include flex-wrap(wrap);
   }
 
-  &__item {
-      @include flex(1 1 auto);
+  // Display list items as grid on large devices
+  &--grid {
+    > .o-list__item {
+      width: 100%;
 
-    .l-list--wrap & {
-      width: 16%;
+      @include bp(medium) {
+        width: 50%;
+      }
     }
   }
+}
 
+.o-list--bullet {
+  @include bp(large){
+      font-size: 1.2rem;
+      line-height: 1.25;
+  }
+
+  .o-list__item {
+    margin-bottom: .5rem; // $todo - use variable
+    padding-left: 1rem; // $todo - use variable
+    padding-right: 2rem;
+    position: relative;
+  }
 }
