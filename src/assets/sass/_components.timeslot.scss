@@ -1,10 +1,101 @@
 // $TIMESLOT ------------------------------------------------------------------/
 
 .c-timeslot {
-    position: relative;
-    color: #fff;
+  color: #fff;
+  margin-top: 0;
+  min-height: 200px;
+  margin-bottom: 0;
+  @include flexbox;
+  @include flex-direction(column);
+  position: relative;
+
+  @include bp(medium) {
     margin-bottom: 100px;
-    @include flexbox;
-    @include flex-flow(column);
+    @include flex-flow(row);
     padding-top: 0
+  }
+
+  &::after {
+    background: url('/assets/img/timeslot-point.svg') 0 0 no-repeat;
+    content: '';
+    display: block;
+    height: 50px;
+    @include rounded(50%);
+    width: 50px;
+    position: absolute;
+    top: 0;
+    left: calc(50% - (50px / 2) + 1px);
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    background-color: $color-yellow;
+    top: -2rem;
+    height: 150%;
+    width: 2px;
+    z-index: 0;
+  }
+
+  &__desc,
+  &__story,
+  &__year {
+    z-index: 999;
+  }
+
+  &__desc,
+  &__year {
+    display: block;
+    font-style: italic;
+    font-size: get-vw-bp-small(32px);
+
+    @include bp(medium) {
+      font-size: get-vw-bp-medium(32px);
+      padding-right: 4rem;
+    }
+
+    @include bp(large) {
+      font-size: get-vw-bp-medium(32px);
+    }
+
+    @include bp(xlarge) {
+      font-size: get-vw-bp-large(48px);
+    }
+  }
+
+  &__story,
+  &__title  {
+    position: relative;
+    width: 100%;
+    z-index: 2;
+
+    @include bp(medium) {
+      width: 50%;
+    }
+  }
+
+  &__year {
+    color: $color-red;
+  }
+
+  &__story {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    padding: 0 2rem;
+    text-align: justify;
+
+    @include bp(large) {
+      padding: 0 4rem;
+    }
+  }
+
+  &__title {
+    text-align: center;
+
+    @include bp(medium) {
+      text-align: right;
+    }
+  }
 }

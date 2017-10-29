@@ -12,7 +12,6 @@
         <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="assets/css/timeslot.css">
 
     </head>
     <body>
@@ -45,7 +44,7 @@
             <div class="container">
               <div class="c-intro u-align-centre">
                 <p class="o-paragraph-intro">{{ about.intro }}</p>
-                <a class="c-btn c-btn--underline" href="#section-about">La nostra storia</a>
+                <a class="c-btn c-btn--underline" href="#section-history">La nostra storia</a>
               </div>
             </div>
           </section>
@@ -87,7 +86,7 @@
                   </div>
                 </div>
               {% endfor %}
-\
+
               <div class="c-callout u-align-centre">
                 <p class="c-callout__title">{{ callout }}</p>
                 <a href="#" class="c-btn" alt="Contattaci">Contattaci</a>
@@ -106,14 +105,14 @@
           </section>
 
           <div class="container">
-            <section class="section section--inverse u-align-centre u-space-vertical">
+            <section id="section-history" class="section section--dark u-align-centre u-space-vertical">
               <h3>Chi siamo</h3>
               <ul class="o-list o-list--wrap">
                 {% for item in history %}
                 <li class="c-timeslot">
-                	<h2>
+                	<h2 class="c-timeslot__title">
                 		<span class="c-timeslot__year">{{ item.year }}</span>
-                		<span class="c-timeslot__title">{{ item.title }}</span>
+                		<span class="c-timeslot__desc">{{ item.title }}</span>
                 	</h2>
                 	<p class="c-timeslot__story">
                     {{ item.desc }}

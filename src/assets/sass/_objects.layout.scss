@@ -32,6 +32,10 @@
   &--inverse {
     background-color: $background-light-color;
   }
+
+  &--dark {
+    background-color: $background-dark-color;
+  }
 }
 
 // $Lists ---------------------------------------------------------------------/
