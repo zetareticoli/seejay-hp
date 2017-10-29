@@ -47,9 +47,18 @@
     @include flex(1 1 auto);
   }
 
-  // Wrap a flexbox list
+  // Wrap a flexbox list on new line
   &--wrap {
     @include flex-wrap(wrap);
+  }
+
+  // Wrap on mobile, no wrap on medium/large devices
+  &--flex-wrap {
+    @include flex-wrap(wrap);
+
+    @include bp(medium) {
+      @include flex-wrap(nowrap);
+    }
   }
 
   // Display list items as grid on large devices

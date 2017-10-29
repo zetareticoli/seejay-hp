@@ -8,6 +8,8 @@
   },
   "services": [
     {
+      "list_layout": "grid",
+      "list_wrap": "wrap",
       "first": "Ideiamo e realizziamo",
       "title": "strumenti innovativi per il social media marketing ",
       "intro": "Proponiamo strumenti e soluzioni proprietarie e tecnologicamente all’avanguardia in grado di far crescere il tuo business.",
@@ -77,6 +79,8 @@
       ]
     },
     {
+      "list_layout": "grid",
+      "list_wrap": "wrap",
       "first": "Sviluppiamo",
       "title": "prodotti web e mobile scalabili \u2028ed efficienti",
       "intro": "Scegliamo solo le soluzioni più innovative e performanti ponendo un’attenzione particolare al design dei prodotti che creiamo.",
@@ -100,6 +104,8 @@
       ]
     },
     {
+      "list_layout": "stack",
+      "list_wrap": "flex-wrap",
       "first": "Trasmettiamo",
       "title": "le nostre competenze ad aziende e professionisti che vogliono crescere",
       "intro": "Attraverso la condivisione delle nostre esperienze tecniche, gestionali e metodologiche aiutiamo aziende e professionisti a migliorare il proprio obiettivo di business.",

@@ -67,7 +67,7 @@
                       {{ item.title }}
                     </h2>
                     <p class="c-card__intro">{{ item.intro }}</p>
-                    <ul class="o-list o-list--wrap o-list--grid">
+                    <ul class="o-list o-list--{{ item.list_wrap }} o-list--{{ item.list_layout }}">
                       {% for detail in item.details %}
                         <li class="c-card__detail o-list__item">
                           {% if detail.icon %}
