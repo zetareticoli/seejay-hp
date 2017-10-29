@@ -7,7 +7,7 @@
 @import "generic.normalize";
 @import "generic.main";
 
-// $GENERIC
+// $ELEMENTS
 @import "elements.main";
 @import "elements.webfont";
 @import "elements.typography";
@@ -19,6 +19,7 @@
 
 // $COMPONENTS
 @import "components.brand";
+@import "components.buttons";
 @import "components.card";
 @import "components.hero";
 @import "components.intro";
