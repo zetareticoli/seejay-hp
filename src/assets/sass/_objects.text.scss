@@ -1,1 +1,31 @@
 // $TEXT ----------------------------------------------------------------------/
+
+.o-bullet {
+
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    left: 0;
+    margin-right: 1rem; // $todo - use variable
+    background-color: $color-red;
+    position: absolute;
+    top: 5px;
+    @include transform(rotate(45deg));
+  }
+}
+
+.o-section-title {
+  font-size: get-vw-bp-small(20px); // $todo - use variable
+  font-weight: $font-weight-normal;
+  text-transform: uppercase;
+
+  @include bp(medium) {
+    font-size: get-vw-bp-medium(20px); // $todo - use variable
+  }
+
+  @include bp(large) {
+    font-size: get-vw-bp-large(20px); // $todo - use variable
+  }
+}
