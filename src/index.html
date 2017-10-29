@@ -50,7 +50,7 @@
           </section>
 
           <div class="u-align-centre">
-            <h5>Cosa facciamo</h5>
+            <h5 class="o-section-title">Cosa facciamo</h5>
           </div>
 
           <section class="section section--inverse u-space-vertical">
@@ -59,20 +59,32 @@
               {% for item in services %}
                 <div class="c-card">
                   <div class="container--fixed">
-                    <h2 class="c-card__title">{{ item.title }}</h2>
+                    <h2 class="c-card__title">
+                      <span class="c-card__evidence">
+                        {{ item.first }}
+                      </span>
+                      {{ item.title }}
+                    </h2>
                     <p class="c-card__intro">{{ item.intro }}</p>
-                    <ul class="l-list l-list--inline">
+                    <ul class="o-list o-list--wrap o-list--grid">
                       {% for detail in item.details %}
-                        <li class="l-list__item c-card__detail">
+                        <li class="o-list__item">
                           <!-- SVG icon here -->
-                          <h3 class="detail__title">{{ detail.title }}</h3>
+                          <h3 class="c-card__detail">
+                            {{ detail.title }}
+                          </h3>
+                          <ul class="u-unstyle o-list--bullet">
+                            {% for item in detail.list %}
+                              <li class="o-list__item o-bullet">{{ item.item }}</li>
+                            {% endfor %}
+                          </ul>
                         </li>
                       {% endfor %}
                     </ul>
                   </div>
                 </div>
               {% endfor %}
-
+\
               <div class="c-callout u-align-centre">
                 <p class="c-callout__title">{{ callout }}</p>
                 <a href="#" class="c-btn" alt="Contattaci">Contattaci</a>
@@ -83,9 +95,9 @@
 
           <section class="section u-align-centre u-space-vertical">
             <h5>Ci hanno già scelto</h5>
-            <ul class="l-list l-list--wrap">
+            <ul class="o-list o-list--wrap">
               {% for brand in brands %}
-                <li class="l-list__item"><img class="u-transp" src="{{ brand.src }}" alt="{{ brand.alt }}"></li>
+                <li class="o-list__item"><img class="u-transp" src="{{ brand.src }}" alt="{{ brand.alt }}"></li>
               {% endfor %}
             </ul>
           </section>
@@ -93,7 +105,7 @@
           <div class="container">
             <section class="section section--inverse u-align-centre u-space-vertical">
               <h3>Chi siamo</h3>
-              <ul class="l-list l-list--wrap">
+              <ul class="o-list o-list--wrap">
                 {% for item in history %}
                 <li class="c-timeslot">
                 	<h2>

@@ -8,22 +8,77 @@
   },
   "services": [
     {
-      "title": "Ideiamo e realizziamo\u2028strumenti innovativi per il social media marketing ",
+      "first": "Ideiamo e realizziamo",
+      "title": "strumenti innovativi per il social media marketing ",
       "intro": "Proponiamo strumenti e soluzioni proprietarie e tecnologicamente all’avanguardia in grado di far crescere il tuo business.",
       "details": [
         {
-          "title": "Twitter Promote"
+          "title": "01. Strategy",
+          "list": [
+            {
+              "item": "Definizione strategica e gestione di piani communication e marketing su canali social media"
+            },
+            {
+              "item": "Gestione pagine e account social"
+            }
+          ]
         },
         {
-          "title": "Social Wall"
+          "title": "02. Engagement",
+          "list": [
+            {
+              "item": "Social Wall"
+            },
+            {
+              "item": "Influencer Marketing"
+            },
+            {
+              "item": "Dirette social per eventi e manifestazioni"
+            },
+            {
+              "item": "Realizzazione campagne ads su Facebook, Twitter, Instagram e LinkedIn"
+            },
+            {
+              "item": "Twitter Promote"
+            },
+            {
+              "item": "Instagram Booster"
+            }
+          ]
         },
         {
-          "title": "Instagram Booster"
+          "title": "03. Caring",
+          "list": [
+            {
+              "item": "Chatbot"
+            },
+            {
+              "item": "Community management"
+            },
+            {
+              "item": "Cura della web reputation del brand"
+            }
+          ]
+        },
+        {
+          "title": "04. Intelligence",
+          "list": [
+            {
+              "item": "Social Analytics, monitoraggio e reportistica avanzata"
+            },
+            {
+              "item": "Social Listening"
+            },
+            {
+              "item": "Analisi del posizionamento social del brand e dei competitor"
+            }
+          ]
         }
       ]
     },
     {
-      "title": "Sviluppiamo \u2028prodotti web e mobile scalabili \u2028ed efficienti",
+      "first": "Sviluppiamo",
+      "title": "prodotti web e mobile scalabili \u2028ed efficienti",
       "intro": "Scegliamo solo le soluzioni più innovative e performanti ponendo un’attenzione particolare al design dei prodotti che creiamo.",
       "details": [
         {
@@ -41,7 +96,8 @@
       ]
     },
     {
-      "title": "Trasmettiamo \u2028le nostre competenze ad aziende e professionisti che vogliono crescere",
+      "first": "Trasmettiamo",
+      "title": "le nostre competenze ad aziende e professionisti che vogliono crescere",
       "intro": "Attraverso la condivisione delle nostre esperienze tecniche, gestionali e metodologiche aiutiamo aziende e professionisti a migliorare il proprio obiettivo di business.",
       "details": [
         {
