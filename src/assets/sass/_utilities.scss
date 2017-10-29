@@ -15,11 +15,17 @@
 .u-space-vertical {
   padding: 50px 0;
 
-  @include bp(medium) {
+  @include bp(large) {
     padding: 100px 0;
   }
 }
 
 .u-transp {
   opacity: .5;
+}
+
+.u-unstyle {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
