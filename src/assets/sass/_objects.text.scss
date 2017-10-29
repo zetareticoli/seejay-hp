@@ -17,15 +17,19 @@
 }
 
 .o-section-title {
-  font-size: get-vw-bp-small(20px); // $todo - use variable
+  font-size: get-vw-bp-small(18px); // $todo - use variable
   font-weight: $font-weight-normal;
   text-transform: uppercase;
 
   @include bp(medium) {
-    font-size: get-vw-bp-medium(20px); // $todo - use variable
+    font-size: get-vw-bp-medium(18px); // $todo - use variable
   }
 
   @include bp(large) {
-    font-size: get-vw-bp-large(20px); // $todo - use variable
+    font-size: get-vw-bp-large(18px); // $todo - use variable
+  }
+
+  &--inverse {
+    color: $color-white;
   }
 }

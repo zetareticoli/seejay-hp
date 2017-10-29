@@ -50,7 +50,7 @@
           </section>
 
           <div class="u-align-centre">
-            <h5 class="o-section-title">Cosa facciamo</h5>
+            <h4 class="o-section-title">Cosa facciamo</h4>
           </div>
 
           <section class="section section--inverse u-space-vertical">
@@ -96,10 +96,12 @@
           </section>
 
           <section class="section u-align-centre u-space-vertical">
-            <h5>Ci hanno già scelto</h5>
-            <ul class="o-list o-list--wrap">
+            <h4 class="o-section-title">Ci hanno già scelto</h4>
+            <ul class="o-list o-list--wrap c-client">
               {% for brand in brands %}
-                <li class="o-list__item"><img class="u-transp" src="{{ brand.src }}" alt="{{ brand.alt }}"></li>
+                <li class="o-list__item">
+                  <img class="c-client__brand u-transp" src="{{ brand.src }}" alt="{{ brand.alt }}">
+                </li>
               {% endfor %}
             </ul>
           </section>

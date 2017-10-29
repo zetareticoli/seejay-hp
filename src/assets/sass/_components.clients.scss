@@ -1,0 +1,17 @@
+// $CLIENTS -------------------------------------------------------------------/
+
+.c-client {
+  .o-list__item {
+    margin: 1rem;
+    @include flexbox;
+    @include align-items(center);
+    @include justify-content(center);
+    width: 33%;
+
+    @include bp(medium) {
+      width: 20%;
+    }
+  }
+
+
+}
