@@ -4,10 +4,12 @@
 // COLORS ======================================================================
 
 // Base colors -------------------------------------------------------------- //
-$color-white       : #fff;
-$color-black       : #212121;
-$color-steelblue   : #2e6d9d;
-$color-gray        : #e0e0e0;
+$color-white        : #fff;
+$color-black        : #212121;
+$color-navyblue     : #2d314d;
+$color-gray         : #e0e0e0;
+$color-red          : #f60;
+$color-yellow       : #ffdc40;
 
 // Gray scale --------------------------------------------------------------- //
 $color-gray-10  : #fafafa;
@@ -22,9 +24,10 @@ $color-gray-90  : #424242;
 $color-gray-100 : #212121;
 
 // UI Color ------------------------------------------------------------------//
-$border-color       : $color-gray-40;
-$link-color         : $color-steelblue;
-$body-color         : $color-gray-90;
+$border-color             : $color-gray-40;
+$link-color               : $color-yellow;
+$body-color               : $color-navyblue;
+$background-light-color   : $color-gray-30;
 
 // TYPOGRAPHY ==================================================================
 
@@ -68,8 +71,8 @@ $breakpoints: (
   xsmall : 20rem,
   small  : 30rem,
   medium : 46.25rem,
-  large  : 62.5rem,
-  xlarge : 312.5rem,
+  large  : 64rem,
+  xlarge : 80rem,
 );
 
 // Shapes --------------------------------------------------------------------//
