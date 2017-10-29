@@ -2,5 +2,23 @@
 
 .c-btn {
   display: inline-block;
+  font-family: $font-sans;
+  font-weight: $font-weight-bold;
   margin-bottom: 1em;
+  text-decoration: none;
+
+  &--underline {
+    box-shadow: 0 15px 0 -6px #FFDC40;
+    color: #2D314D;
+    font-size: get-vw-bp-small(18px);
+    @include transition(all $default-timing ease);
+
+    @include bp(medium) {
+      font-size: get-vw-bp-medium(24px);
+    }
+
+    @include bp(large) {
+      font-size: get-vw-bp-large(24px);
+    }
+  }
 }
