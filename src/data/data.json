@@ -82,16 +82,20 @@
       "intro": "Scegliamo solo le soluzioni più innovative e performanti ponendo un’attenzione particolare al design dei prodotti che creiamo.",
       "details": [
         {
-          "title": "Realtà virtuale e 3D"
+          "title": "Realtà virtuale e 3D",
+          "icon": "#icon-virtual"
         },
         {
-          "title": "E-commerce e siti web"
+          "title": "E-commerce e siti web",
+          "icon": "#icon-online-store"
         },
         {
-          "title": "Chatbot"
+          "title": "Chatbot",
+          "icon": "#icon-engineer"
         },
         {
-          "title": "App mobile"
+          "title": "App mobile",
+          "icon": "#icon-tablet"
         }
       ]
     },
@@ -104,7 +108,7 @@
           "title": "Digital Transformation"
         },
         {
-          "title": "Business Consulting"
+          "title": "Business Analysis"
         },
         {
           "title": "Formazione e Coaching"

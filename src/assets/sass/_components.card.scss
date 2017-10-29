@@ -13,25 +13,34 @@
     margin-top: 6vh;
   }
 
-  &__evidence,
   &__detail {
-    color: $color-red;
-  }
-
-  &__detail {
-    font-size: get-vw-bp-small(24px); // $todo - use variable
-    font-weight: $font-weight-normal;
+    margin-bottom: 2rem;
 
     @include bp(medium) {
-      font-size: get-vw-bp-medium(24px); // $todo - use variable
+      margin-bottom: 3rem;
     }
 
-    @include bp(large) {
-      font-size: get-vw-bp-large(32px); // $todo - use variable
+    .o-icon {
+      margin-bottom: 1rem;
+    }
+
+    .o-title {
+      color: $color-red;
+      font-size: get-vw-bp-small(24px); // $todo - use variable
+      font-weight: $font-weight-normal;
+
+      @include bp(medium) {
+        font-size: get-vw-bp-medium(24px); // $todo - use variable
+      }
+
+      @include bp(large) {
+        font-size: get-vw-bp-large(32px); // $todo - use variable
+      }
     }
   }
 
   &__evidence {
+    color: $color-red;
     display: block;
     font-weight: $font-weight-black;
   }

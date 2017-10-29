@@ -16,6 +16,7 @@
 
     </head>
     <body>
+      {% include "partials/icons.html" %}
         <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
@@ -68,9 +69,11 @@
                     <p class="c-card__intro">{{ item.intro }}</p>
                     <ul class="o-list o-list--wrap o-list--grid">
                       {% for detail in item.details %}
-                        <li class="o-list__item">
-                          <!-- SVG icon here -->
-                          <h3 class="c-card__detail">
+                        <li class="c-card__detail o-list__item">
+                          {% if detail.icon %}
+                            <svg class="o-icon o-icon--large"><use xlink:href="{{ detail.icon }}"></use></svg>
+                          {% endif %}
+                          <h3 class="o-title">
                             {{ detail.title }}
                           </h3>
                           <ul class="u-unstyle o-list--bullet">
