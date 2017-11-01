@@ -8,7 +8,6 @@
   },
   "services": {
     "social": {
-      "layout": "grid",
       "wrap": "wrap",
       "first": "Ideiamo e realizziamo",
       "title": "strumenti innovativi per il social media marketing ",
@@ -105,7 +104,6 @@
       ]
     },
     "dev": {
-      "layout": "grid",
       "wrap": "wrap",
       "first": "Sviluppiamo",
       "title": "prodotti web e mobile scalabili \u2028ed efficienti",
@@ -127,10 +125,24 @@
           "title": "App mobile",
           "icon": "#icon-tablet"
         }
+      ],
+      "tech_intro": "Adoperiamo i principali linguaggi di programmazione e le tecnologie più innovative disponibili sul mercato. Abbiamo un grande vantaggio: non solo sviluppiamo prodotti ex-novo, in base alle richieste dei clienti, ma utilizziamo anche prodotti proprietari Seejay, introvabili altrove.",
+      "tech": [
+        {
+          "title": "Social Wall",
+          "icon": ""
+        },
+        {
+          "title": "Twitter Promote",
+          "icon": ""
+        },
+        {
+          "title": "Instagram Booster",
+          "icon": ""
+        }
       ]
     },
     "coach": {
-      "layout": "stack",
       "wrap": "flex-wrap",
       "first": "Trasmettiamo",
       "title": "le nostre competenze ad aziende e professionisti che vogliono crescere",
@@ -148,7 +160,9 @@
       ]
     }
   },
-  "callout": "Come possiamo aiutarti? Raccontaci la tua idea o il tuo progetto",
+  "callout_social": "Vuoi rendere più efficace \u2028il tuo marketing sui social media?",
+  "callout_dev": "Come possiamo aiutarti? Raccontaci la tua idea o il tuo progetto",
+  "callout_coach": "Vuoi migliorare il tuo business?",
   "brands": [
     {
       "alt": "Logo Enel",
@@ -204,7 +218,7 @@
     },
     {
       "year": "2017",
-      "title": "Evoluzione",
+      "title": "L'evoluzione",
       "desc": "Grazie al solido background e a un team eterogeneo di specialisti in costante aggiornamento, Seejay si evolve in una fucina di soluzioni digitali e web marketing per ogni esigenza."
     }
   ]

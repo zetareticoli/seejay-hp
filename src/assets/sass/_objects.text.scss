@@ -18,8 +18,16 @@
 
 .o-paragraph-intro {
   font-family: $font-serif;
-  font-style: italic; // $todo - use variable
-  line-height: 1.25;
+  line-height: 1.5;
+  font-size: get-vw-bp-small(18px); // $todo - use variable
+
+  @include bp(medium) {
+    font-size: get-vw-bp-medium(18px); // $todo - use variable
+  }
+
+  @include bp(large) {
+    font-size: get-vw-bp-large(18px); // $todo - use variable
+  }
 }
 
 .o-section-title {
@@ -37,6 +45,35 @@
 
   &--inverse {
     color: $color-white;
+  }
+}
+
+.o-subhead {
+  color: $color-navyblue;
+  font-size: get-vw-bp-small(32px); // $todo - use variable
+  font-style: italic;
+  font-weight: $font-weight-bold;
+
+  @include bp(medium) {
+    font-size: get-vw-bp-medium(32px); // $todo - use variable
+  }
+
+  @include bp(large) {
+    font-size: get-vw-bp-large(32px); // $todo - use variable
+  }
+}
+
+.o-title {
+  color: $color-red;
+  font-size: get-vw-bp-small(24px); // $todo - use variable
+  font-weight: $font-weight-normal;
+
+  @include bp(medium) {
+    font-size: get-vw-bp-medium(24px); // $todo - use variable
+  }
+
+  @include bp(large) {
+    font-size: get-vw-bp-large(24px); // $todo - use variable
   }
 }
 

@@ -24,6 +24,20 @@
   margin-bottom: 3rem;
 }
 
+.u-space-right {
+  &-base {
+    margin-right: 1rem;
+  }
+
+  &-double {
+    margin-right: 2rem;
+  }
+
+  &-large {
+    margin-right: 3rem;
+  }
+}
+
 .u-space-vertical {
   padding: 50px 0;
 

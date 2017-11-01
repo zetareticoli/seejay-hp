@@ -63,9 +63,9 @@
 
   &__offices {
     display: none;
-    
+
     @include bp(large) {
-      display: inline-block;;
+      display: block;
       margin-right: 2rem;
     }
   }

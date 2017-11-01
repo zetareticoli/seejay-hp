@@ -27,7 +27,7 @@
             <div class="container">
 
               {% include "partials/nav.html" %}
-              
+
               <div class="c-hero__payoff">
                 <span class="payoff__row">social jokers</span>
                 <span class="payoff__row">
@@ -47,7 +47,7 @@
           <section class="section section--overlap">
             <div class="container">
               <div class="c-intro u-align-centre">
-                <p class="o-paragraph-intro">{{ about.intro }}</p>
+                <p class="c-intro__text">{{ about.intro }}</p>
                 <a class="c-btn c-btn--underline" href="#section-history">La nostra storia</a>
               </div>
             </div>
@@ -60,45 +60,11 @@
           <section class="section section--inverse u-space-vertical">
             <div class="container">
 
-            {% include "partials/services-social.html" %}
-            <!--
-              {% for item in services %}
-                <div class="c-card c-card--{{ item.name }}">
-                  <div class="container--fixed">
-                    <h2 class="c-card__title">
-                      <span class="c-card__evidence">
-                        {{ item.first }}
-                      </span>
-                      {{ item.title }}
-                    </h2>
-                    <p class="c-card__intro">{{ item.intro }}</p>
-                    <ul class="c-cycle o-list o-list--{{ item.list_wrap }} o-list--{{ item.list_layout }}">
-                      {% for detail in item.details %}
-                        <li class="c-card__detail o-list__item">
-                          {% if detail.icon %}
-                            <svg class="o-icon o-icon--large"><use xlink:href="{{ detail.icon }}"></use></svg>
-                          {% endif %}
-                          <h3 class="o-title">
-                            {{ detail.title }}
-                          </h3>
-                          <ul class="u-unstyle o-list--bullet">
-                            {% for item in detail.list %}
-                              <li class="o-list__item o-bullet">
-                                <span class="o-text--small">{{ item.item }}</span>
-                              </li>
-                            {% endfor %}
-                          </ul>
-                        </li>
-                      {% endfor %}
-                    </ul>
-                  </div>
-                </div>
-              {% endfor %} -->
+              {% include "partials/services-social.html" %}
 
-              <div class="c-callout u-align-centre">
-                <p class="c-callout__title">{{ callout }}</p>
-                <a href="#" class="c-btn" alt="Contattaci">Contattaci</a>
-              </div>
+              {% include "partials/services-dev.html" %}
+
+              {% include "partials/services-coach.html" %}
 
             </div>
           </section>

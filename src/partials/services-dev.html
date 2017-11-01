@@ -1,0 +1,46 @@
+<div class="c-card c-card--dev">
+  <div class="container--fixed">
+    <h2 class="c-card__title">
+      <span class="c-card__evidence">
+        {{ services.dev.first }}
+      </span>
+      {{ services.dev.title }}
+    </h2>
+    <p class="c-card__intro">{{ services.dev.intro }}</p>
+    <ul class="o-list o-list--flex-wrap">
+      {% for detail in services.dev.details %}
+        <li class="c-card__detail o-list__item o-size-1/1 o-size-1/4@lg u-space-right-double">
+          {% if detail.icon %}
+            <svg class="o-icon o-icon--large"><use xlink:href="{{ detail.icon }}"></use></svg>
+          {% endif %}
+          <h4 class="o-title">
+            {{ detail.title }}
+          </h4>
+          <ul class="u-unstyle o-list--bullet">
+            {% for item in detail.list %}
+              <li class="o-list__item o-bullet">
+                <span class="o-text--small">{{ item.item }}</span>
+              </li>
+            {% endfor %}
+          </ul>
+        </li>
+      {% endfor %}
+    </ul>
+    <h3 class="o-subhead">Tecnologie</h3>
+    <p class="o-paragraph-intro">{{ services.dev.tech_intro }}</p>
+    <ul class="u-unstyle o-list o-list--flex-wrap">
+      {% for tech in services.dev.tech %}
+        <li class="o-list__item o-size-1/1">
+          <svg class="o-icon o-icon--large"><use xlink:href="{{ tech.icon }}"></use></svg>
+          <h3 class="o-title">{{ tech.title }}</h3>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <div class="c-callout u-align-centre">
+      <h4 class="c-callout__title">{{ callout_dev }}</h4>
+      <a href="#" class="c-btn c-btn--primary" alt="Contattaci">Contattaci</a>
+    </div>
+
+  </div>
+</div>

@@ -13,6 +13,10 @@
     margin-top: 6vh;
   }
 
+  &:last-child {
+    margin-bottom: 0 !important;
+  }
+
   &__detail {
     margin-bottom: 2rem;
 
@@ -22,20 +26,6 @@
 
     .o-icon {
       margin-bottom: 1rem;
-    }
-
-    .o-title {
-      color: $color-red;
-      font-size: get-vw-bp-small(24px); // $todo - use variable
-      font-weight: $font-weight-normal;
-
-      @include bp(medium) {
-        font-size: get-vw-bp-medium(24px); // $todo - use variable
-      }
-
-      @include bp(large) {
-        font-size: get-vw-bp-large(32px); // $todo - use variable
-      }
     }
   }
 

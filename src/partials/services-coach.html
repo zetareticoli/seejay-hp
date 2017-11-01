@@ -1,21 +1,21 @@
-<div class="c-card c-card--smm">
+<div class="c-card c-card--coach">
   <div class="container--fixed">
     <h2 class="c-card__title">
       <span class="c-card__evidence">
-        {{ services.social.first }}
+        {{ services.coach.first }}
       </span>
-      {{ services.social.title }}
+      {{ services.coach.title }}
     </h2>
-    <p class="c-card__intro">{{ services.social.intro }}</p>
-    <ul class="u-unstyle o-size1/1 o-list o-list--wrap">
-      {% for icon in services.social.icons %}
+    <p class="c-card__intro">{{ services.coach.intro }}</p>
+    <ul class="u-unstyle o-size1/1 o-list o-list--wrap ">
+      {% for icon in services.coach.icons %}
         <li class="o-list__item u-space-double">
           <svg class="o-icon o-icon--fluid o-icon-{{ icon.name }}"><use xlink:href="#icon-{{ icon.name }}"></use></svg>
         </li>
       {% endfor %}
     </ul>
-    <ul class="c-cycle o-list o-list--wrap o-list--grid">
-      {% for detail in services.social.details %}
+    <ul class="o-list o-list--{{ services.coach.wrap }} o-list--{{ services.coach.layout }}">
+      {% for detail in services.coach.details %}
         <li class="c-card__detail o-list__item">
           {% if detail.icon %}
             <svg class="o-icon o-icon--large"><use xlink:href="{{ detail.icon }}"></use></svg>
@@ -35,7 +35,7 @@
     </ul>
 
     <div class="c-callout u-align-centre">
-      <h4 class="c-callout__title">{{ callout_social }}</h4>
+      <h4 class="c-callout__title">{{ callout_coach }}</h4>
       <a href="#" class="c-btn c-btn--primary" alt="Contattaci">Contattaci</a>
     </div>
 
