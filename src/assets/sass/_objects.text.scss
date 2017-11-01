@@ -63,6 +63,12 @@
   }
 }
 
+.o-text {
+  &--small {
+    font-size: 75%;
+  }
+}
+
 .o-title {
   color: $color-red;
   font-size: get-vw-bp-small(24px); // $todo - use variable
