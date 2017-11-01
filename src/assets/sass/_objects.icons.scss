@@ -3,6 +3,8 @@
 .o-icon {
   vertical-align: middle;
 
+  // Sizes
+  //
   &--small {
     width: 2rem;
     height: 2rem;
@@ -26,12 +28,46 @@
     }
   }
 
-  &--inverse {
-    fill: white;
-  }
-
   &--inline {
     display: inline-block;
     margin: 0 1rem;
+  }
+
+  // Colors
+  //
+  &-inverse {
+    fill: white !important;
+  }
+
+  &-facebook {
+    fill: $color-facebook;
+  }
+
+  &-twitter {
+    fill: $color-twitter;
+  }
+
+  &-instagram {
+    fill: $color-instagram;
+  }
+
+  &-youtube {
+    fill: $color-youtube;
+  }
+
+  &-pinterest {
+    fill: $color-pinterest;
+  }
+
+  &-tripadvisor {
+    fill: $color-tripadvisor;
+  }
+
+  &-flickr {
+    fill: $color-flickr;
+  }
+
+  &-linkedin {
+    fill: $color-linkedin;
   }
 }

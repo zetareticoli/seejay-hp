@@ -30,12 +30,20 @@ $body-color               : $color-navyblue;
 $background-light-color   : $color-gray-30;
 $background-dark-color    : $color-navyblue;
 
+// Social Color --------------------------------------------------------------//
+$color-facebook : #3b5998;
+$color-twitter: #1da1f2;
+$color-youtube: #cd201f;
+$color-pinterest: #bd081c;
+$color-flickr: #0063dc;
+$color-instagram: #e4405f;
+$color-linkedin: #0077b5;
+$color-tripadvisor: #589442;
+
+
 // TYPOGRAPHY ==================================================================
 
 $line-height-base: 1.5;
-
-// Font size -----------------------------------------------------------------//
-
 
 // Font weight ---------------------------------------------------------------//
 $font-weight-normal : 400;
@@ -73,7 +81,7 @@ $breakpoints: (
   small  : 30rem,
   medium : 46.25rem,
   large  : 64rem,
-  xlarge : 80rem,
+  xlarge : 75rem,
 );
 
 // Shapes --------------------------------------------------------------------//
