@@ -1,0 +1,16 @@
+.c-cycle {
+  .c-card__detail:nth-of-type(2),
+  .c-card__detail:nth-of-type(3), {
+    @include bp(large){
+      padding-left: 5vw;
+    }
+  }
+
+  .c-card__detail:nth-of-type(3) {
+    order: 4;
+  }
+
+  .card__detail:nth-of-type(4) {
+    order: 3;
+  }
+}
