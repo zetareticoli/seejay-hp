@@ -1,13 +1,17 @@
 .c-callout {
   margin: 1rem auto;
-  max-width: 50vw;
+  width: auto;
+
+  @include bp(large) {
+    max-width: 50vw;
+  }
 
   &:before {
     background: $color-navyblue;
     content: '';
     display: block;
     height: 2px;
-    margin: 0 auto;
+    margin: 0 auto 2rem;
     width: 5rem;
   }
 
@@ -15,7 +19,7 @@
     font-family: $font-sans;
     font-style: italic;
     font-weight: 300;
-    font-size: get-vw-bp-small(36px); // $todo - use variable
+    font-size: get-vw-bp-small(28px); // $todo - use variable
     line-height: 1.15;
 
     @include bp(medium) {
