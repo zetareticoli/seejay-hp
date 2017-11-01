@@ -149,13 +149,16 @@
       "intro": "Attraverso la condivisione delle nostre esperienze tecniche, gestionali e metodologiche aiutiamo aziende e professionisti a migliorare il proprio obiettivo di business.",
       "details": [
         {
-          "title": "Digital Transformation"
+          "title": "Digital Transformation",
+          "icon": "#icon-digital"
         },
         {
-          "title": "Business Analysis"
+          "title": "Business Analysis",
+          "icon": "#icon-business"
         },
         {
-          "title": "Formazione e Coaching"
+          "title": "Formazione e Coaching",
+          "icon": "#icon-coach"
         }
       ]
     }
