@@ -25,10 +25,4 @@
   @include bp(xlarge) {
     min-height: 585px;
   }
-
-  .o-paragraph-intro {
-    font-family: $font-serif;
-    font-style: italic; // $todo - use variable
-    line-height: 1.25;
-  }
 }

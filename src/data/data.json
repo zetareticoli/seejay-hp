@@ -6,11 +6,10 @@
   "about": {
     "intro": "Siamo una fucina di talenti nata in Sicilia alle pendici dell’Etna. Ai clienti trasmettiamo l’accoglienza e il calore della nostra terra."
   },
-  "services": [
-    {
-      "name": "smm",
-      "list_layout": "grid",
-      "list_wrap": "wrap",
+  "services": {
+    "social": {
+      "layout": "grid",
+      "wrap": "wrap",
       "first": "Ideiamo e realizziamo",
       "title": "strumenti innovativi per il social media marketing ",
       "intro": "Proponiamo strumenti e soluzioni proprietarie e tecnologicamente all’avanguardia in grado di far crescere il tuo business.",
@@ -77,12 +76,37 @@
             }
           ]
         }
+      ],
+      "icons": [
+        {
+          "name": "facebook"
+        },
+        {
+          "name": "twitter"
+        },
+        {
+          "name": "instagram"
+        },
+        {
+          "name": "pinterest"
+        },
+        {
+          "name": "youtube"
+        },
+        {
+          "name": "tripadvisor"
+        },
+        {
+          "name": "flickr"
+        },
+        {
+          "name": "linkedin"
+        }
       ]
     },
-    {
-      "name": "dev",
-      "list_layout": "grid",
-      "list_wrap": "wrap",
+    "dev": {
+      "layout": "grid",
+      "wrap": "wrap",
       "first": "Sviluppiamo",
       "title": "prodotti web e mobile scalabili \u2028ed efficienti",
       "intro": "Scegliamo solo le soluzioni più innovative e performanti ponendo un’attenzione particolare al design dei prodotti che creiamo.",
@@ -105,10 +129,9 @@
         }
       ]
     },
-    {
-      "name": "coach",
-      "list_layout": "stack",
-      "list_wrap": "flex-wrap",
+    "coach": {
+      "layout": "stack",
+      "wrap": "flex-wrap",
       "first": "Trasmettiamo",
       "title": "le nostre competenze ad aziende e professionisti che vogliono crescere",
       "intro": "Attraverso la condivisione delle nostre esperienze tecniche, gestionali e metodologiche aiutiamo aziende e professionisti a migliorare il proprio obiettivo di business.",
@@ -124,7 +147,7 @@
         }
       ]
     }
-  ],
+  },
   "callout": "Come possiamo aiutarti? Raccontaci la tua idea o il tuo progetto",
   "brands": [
     {

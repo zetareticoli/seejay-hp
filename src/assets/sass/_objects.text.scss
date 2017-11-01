@@ -16,6 +16,12 @@
   }
 }
 
+.o-paragraph-intro {
+  font-family: $font-serif;
+  font-style: italic; // $todo - use variable
+  line-height: 1.25;
+}
+
 .o-section-title {
   font-size: get-vw-bp-small(18px); // $todo - use variable
   font-weight: $font-weight-normal;

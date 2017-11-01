@@ -17,4 +17,21 @@
     width: 4rem;
     height: 4rem;
   }
+
+  &--fluid {
+    width: 5vw;
+
+    @include bp(xlarge) {
+      width: 3vw;
+    }
+  }
+
+  &--inverse {
+    fill: white;
+  }
+
+  &--inline {
+    display: inline-block;
+    margin: 0 1rem;
+  }
 }
