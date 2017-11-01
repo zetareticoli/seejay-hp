@@ -29,3 +29,14 @@
   margin: 0;
   padding: 0;
 }
+
+.is-inline {
+  display: inline-block;
+  margin: 0 .5rem;
+}
+
+.is-locked,
+.is-locked  body {
+	height: 100%;
+	overflow: hidden;
+}

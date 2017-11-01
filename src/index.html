@@ -25,7 +25,7 @@
 
           <section class="section c-hero">
             <div class="container">
-              <img class="c-brand" src="assets/img/brand.png">
+              {% include "partials/nav.html" %}
               <div class="c-hero__payoff">
                 <span class="payoff__row">social jokers</span>
                 <span class="payoff__row">
@@ -89,7 +89,7 @@
                     </ul>
                   </div>
                 </div>
-              {% endfor %}
+              {% endfor %} -->
 
               <div class="c-callout u-align-centre">
                 <p class="c-callout__title">{{ callout }}</p>
@@ -134,8 +134,8 @@
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+        <script src="assets/js/plugins.js"></script>
+        <script src="assets/js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
         <script>

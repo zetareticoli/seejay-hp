@@ -1,13 +1,12 @@
-// $CARDS ---------------------------------------------------------------------/
+// $BRAND ---------------------------------------------------------------------/
 
 .c-brand {
-  float: right;
-  margin-top: 2vh;
-  margin-bottom: 2vh;
+  fill: white;
   width: 20vw;
   @include transition(width .2 ease);
 
   @include bp(large) {
+    margin-bottom: 3rem;
     max-width: 150px;
   }
 }
