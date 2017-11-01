@@ -39,3 +39,10 @@
     color: $color-white;
   }
 }
+
+.o-text-uppercase {
+  color: $color-white;
+  font-family: $font-sans;
+  font-size: .65rem;
+  text-transform: uppercase;
+}

@@ -60,4 +60,13 @@
       margin: 2rem 0 1rem;
     }
   }
+
+  &__offices {
+    display: none;
+    
+    @include bp(large) {
+      display: inline-block;;
+      margin-right: 2rem;
+    }
+  }
 }

@@ -1,12 +1,12 @@
 // $BRAND ---------------------------------------------------------------------/
 
 .c-brand {
-  fill: white;
+  margin-bottom: 1rem;
   width: 20vw;
   @include transition(width .2 ease);
 
   @include bp(large) {
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     max-width: 150px;
   }
 }
