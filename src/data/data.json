@@ -8,6 +8,7 @@
   },
   "services": [
     {
+      "name": "smm",
       "list_layout": "grid",
       "list_wrap": "wrap",
       "first": "Ideiamo e realizziamo",
@@ -79,6 +80,7 @@
       ]
     },
     {
+      "name": "dev",
       "list_layout": "grid",
       "list_wrap": "wrap",
       "first": "Sviluppiamo",
@@ -104,6 +106,7 @@
       ]
     },
     {
+      "name": "coach",
       "list_layout": "stack",
       "list_wrap": "flex-wrap",
       "first": "Trasmettiamo",
