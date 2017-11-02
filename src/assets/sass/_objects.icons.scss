@@ -37,8 +37,13 @@
 
   // Colors
   //
+
+  &--color {
+    fill: $color-red;
+  }
+
   &--inverse {
-    fill: white !important;
+    fill: $color-white !important;
   }
 
   &-facebook {
