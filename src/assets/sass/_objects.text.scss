@@ -16,6 +16,16 @@
   }
 }
 
+.o-link {
+  color: $color-red;
+  text-decoration: none;
+
+  &--gray {
+    color: $color-gray;
+    text-decoration: underline;
+  }
+}
+
 .o-paragraph-intro {
   font-family: $font-serif;
   line-height: 1.5;
@@ -67,6 +77,11 @@
   &--small {
     font-size: 75%;
   }
+}
+
+.o-text-copyright {
+  color: $color-gray;
+  margin: 2rem 0;
 }
 
 .o-title {

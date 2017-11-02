@@ -79,6 +79,12 @@
       }
     }
   }
+
+  &--inline {
+    .o-list__item {
+      display: inline-block;
+    }
+  }
 }
 
 .o-list--bullet {

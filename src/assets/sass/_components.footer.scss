@@ -1,4 +1,31 @@
 .c-footer {
+  font-family: $font-sans;
+  padding: 2rem 0;
+  position: relative;
+  text-align: center;
 
+  @include bp(large) {
+    padding: 4rem 0;
+    text-align: left;
+  }
 
+  &__aside {
+    margin-bottom: 2rem;
+    text-align: center;
+
+    @include bp(large) {
+      position: absolute;
+      right: 2rem;
+      text-align: right;
+      top: 4rem;
+    }
+  }
+
+  &__menu {
+    margin: 2rem 0 1rem;
+    .o-link {
+      display: inline-block;
+      margin: 0 1rem 1rem 0;
+    }
+  }
 }
