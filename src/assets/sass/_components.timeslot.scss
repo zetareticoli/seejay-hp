@@ -71,6 +71,10 @@
     @include bp(xlarge) {
       font-size: get-vw-bp-large(48px);
     }
+
+    @include bp(xxlarge) {
+      font-size: get-vw-bp-xlarge(48px);
+    }
   }
 
   &__story,
@@ -80,7 +84,7 @@
     z-index: 2;
 
     @include bp(medium) {
-      width: 50%;
+      width: 50vw;
     }
   }
 

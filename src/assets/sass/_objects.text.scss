@@ -96,6 +96,10 @@
   @include bp(large) {
     font-size: get-vw-bp-large(24px); // $todo - use variable
   }
+
+  @include bp(xlarge) {
+    font-size: get-vw-bp-xlarge(24px); // $todo - use variable
+  }
 }
 
 .o-text-uppercase {

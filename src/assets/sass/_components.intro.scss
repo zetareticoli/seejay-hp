@@ -10,7 +10,7 @@
   @include justify-content(center);
   margin-bottom: 5vh;
   min-height: 350px;
-  padding: 0 10vw;
+  padding: 10vw;
   z-index: 999;
 
   @include bp(medium) {

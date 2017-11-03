@@ -21,6 +21,10 @@
     @include bp(xlarge) {
       max-width: 1000px;
     }
+
+    @include bp(xxlarge) {
+      max-width: 1200px;
+    }
   }
 }
 

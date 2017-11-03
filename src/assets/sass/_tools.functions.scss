@@ -14,3 +14,8 @@
   $vw-context: (1280 * 0.01) * 1px;
   @return ($target / $vw-context) * 1vw;
 }
+
+@function get-vw-bp-xlarge($target) {
+  $vw-context: (1440 * 0.01) * 1px;
+  @return ($target / $vw-context) * 1vw;
+}
