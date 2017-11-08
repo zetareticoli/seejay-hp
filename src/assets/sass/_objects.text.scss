@@ -1,21 +1,5 @@
 // $TEXT ----------------------------------------------------------------------/
 
-.o-bullet {
-
-  &::before {
-    content: '';
-    display: inline-block;
-    width: 6px;
-    height: 6px;
-    left: 0;
-    margin-right: 1rem; // $todo - use variable
-    background-color: $color-red;
-    position: absolute;
-    top: 5px;
-    @include transform(rotate(45deg));
-  }
-}
-
 .o-link {
   color: $color-red;
   text-decoration: none;

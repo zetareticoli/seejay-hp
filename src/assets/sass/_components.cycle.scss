@@ -1,10 +1,75 @@
 .c-cycle {
-  background: $color-white url('../img/cycle-arrows.svg') 45% 75% no-repeat;
-    
+  background: $color-white url('../img/cycle-arrows.svg') center top no-repeat;
+  margin-top: 3rem;
+
+  .c-card__detail {
+    width: 100%;
+
+    @include bp(large) {
+      padding-top: 3rem;
+      width: 50%;
+
+    }
+
+    .o-title {
+      margin-bottom: 1rem;
+    }
+
+    .o-list__item {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+  }
+
+  .c-card__detail:nth-of-type(1),
+  .c-card__detail:nth-of-type(4) {
+
+    @include bp(large) {
+      padding-right: 22%;
+      text-align: right;
+
+
+      .o-bullet::before {
+        content: '';
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        right: 0;
+        margin-left: 2rem; // $todo - use variable
+        background-color: $color-red;
+        position: absolute;
+        top: 10px;
+        @include transform(rotate(45deg));
+      }
+    }
+  }
+
+  .c-card__detail:nth-of-type(1),
+  .c-card__detail:nth-of-type(2) {
+    @include bp(large) {
+    }
+  }
+
+
   .c-card__detail:nth-of-type(2),
   .c-card__detail:nth-of-type(3), {
     @include bp(large){
-      padding-left: 5vw;
+      padding-left: 22%;
+      text-align: left;
+
+
+      .o-bullet::before {
+        content: '';
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        left: 0;
+        margin-right: 2rem; // $todo - use variable
+        background-color: $color-red;
+        position: absolute;
+        top: 10px;
+        @include transform(rotate(45deg));
+      }
     }
   }
 
