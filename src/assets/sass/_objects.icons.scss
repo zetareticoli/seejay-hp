@@ -5,6 +5,11 @@
 
   // Sizes
   //
+  &--xsmall {
+    width: 1rem;
+    height: 1rem;
+  }
+
   &--small {
     width: 2rem;
     height: 2rem;
@@ -44,6 +49,7 @@
 
   &--inverse {
     fill: $color-white !important;
+    stroke: $color-white !important;
   }
 
   &-facebook {

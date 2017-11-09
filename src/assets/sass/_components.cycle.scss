@@ -1,14 +1,18 @@
 .c-cycle {
-  background: $color-white url('../img/cycle-arrows.svg') center top no-repeat;
-  margin-top: 3rem;
+  background: $color-white url('../img/cycle-line.svg') left top no-repeat;
+  margin-top: 1rem;
+
+  @include bp(large) {
+    background: $color-white url('../img/cycle-arrows.svg') center top no-repeat;
+  }
 
   .c-card__detail {
     width: 100%;
+    padding-left: 4rem;
 
     @include bp(large) {
-      padding-top: 3rem;
       width: 50%;
-
+      padding-left: 0;
     }
 
     .o-title {
@@ -18,6 +22,11 @@
     .o-list__item {
       font-size: 1rem;
       line-height: 1.5;
+      margin-bottom: .25rem;
+
+      @include bp(large) {
+        margin-bottom: .5rem;
+      }
     }
   }
 
@@ -25,9 +34,8 @@
   .c-card__detail:nth-of-type(4) {
 
     @include bp(large) {
-      padding-right: 22%;
+      padding-right: 20%;
       text-align: right;
-
 
       .o-bullet::before {
         content: '';
@@ -47,16 +55,17 @@
   .c-card__detail:nth-of-type(1),
   .c-card__detail:nth-of-type(2) {
     @include bp(large) {
+      margin-bottom: 1rem;
+      padding-top: 3rem;
     }
   }
 
-
   .c-card__detail:nth-of-type(2),
   .c-card__detail:nth-of-type(3), {
-    @include bp(large){
-      padding-left: 22%;
-      text-align: left;
 
+    @include bp(large){
+      padding-left: 25%;
+      text-align: left;
 
       .o-bullet::before {
         content: '';
@@ -70,6 +79,10 @@
         top: 10px;
         @include transform(rotate(45deg));
       }
+    }
+
+    @include bp(xxlarge) {
+      padding-left: 22%;
     }
   }
 
