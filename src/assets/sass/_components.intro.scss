@@ -10,20 +10,15 @@
   @include justify-content(center);
   margin-bottom: 5vh;
   min-height: 350px;
-  padding: 10vw;
+  padding: 8vw 10vw;
   z-index: 999;
 
   @include bp(medium) {
     font-size: get-vw-bp-medium(36px); // $todo - use variable
-    min-height: 400px;
   }
 
   @include bp(large) {
     font-size: get-vw-bp-large(36px); // $todo - use variable
-  }
-
-  @include bp(xlarge) {
-    min-height: 585px;
   }
 
   &__text {
