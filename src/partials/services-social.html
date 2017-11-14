@@ -1,43 +1,44 @@
 <div class="c-card c-card--smm">
-  <div class="container--fixed">
+  <div class="">
     <h2 class="c-card__title">
       <span class="c-card__evidence">
         {{ services.social.first }}
       </span>
       {{ services.social.title }}
     </h2>
-    <p class="c-card__intro">{{ services.social.intro }}</p>
-    <ul class="u-unstyle o-size1/1 o-list o-list--wrap">
-      {% for icon in services.social.icons %}
-        <li class="o-list__item u-space-double">
-          <svg class="o-icon o-icon--fluid o-icon-{{ icon.name }}"><use xlink:href="#icon-{{ icon.name }}"></use></svg>
-        </li>
-      {% endfor %}
-    </ul>
-    <ul class="c-cycle o-list o-list--wrap o-list--grid">
-      {% for detail in services.social.details %}
-        <li class="c-card__detail o-list__item">
-          {% if detail.icon %}
-            <svg class="o-icon o-icon--large"><use xlink:href="{{ detail.icon }}"></use></svg>
-          {% endif %}
-          <h4 class="o-title">
-            {{ detail.title }}
-          </h4>
-          <ul class="u-unstyle">
-            {% for item in detail.list %}
-              <li class="o-list__item">
-                <span>{{ item.item }}</span>
-              </li>
-            {% endfor %}
-          </ul>
-        </li>
-      {% endfor %}
-    </ul>
+    <div class="c-card__container">
+      <p class="c-card__intro">{{ services.social.intro }}</p>
+      <ul class="u-unstyle o-size1/1 o-list o-list--wrap">
+        {% for icon in services.social.icons %}
+          <li class="o-list__item u-space-double">
+            <svg class="o-icon o-icon--fluid o-icon-{{ icon.name }}"><use xlink:href="#icon-{{ icon.name }}"></use></svg>
+          </li>
+        {% endfor %}
+      </ul>
+      <ul class="c-cycle o-list o-list--wrap o-list--grid">
+        {% for detail in services.social.details %}
+          <li class="c-card__detail o-list__item">
+            {% if detail.icon %}
+              <svg class="o-icon o-icon--large"><use xlink:href="{{ detail.icon }}"></use></svg>
+            {% endif %}
+            <h4 class="o-title">
+              {{ detail.title }}
+            </h4>
+            <ul class="u-unstyle">
+              {% for item in detail.list %}
+                <li class="o-list__item">
+                  <span>{{ item.item }}</span>
+                </li>
+              {% endfor %}
+            </ul>
+          </li>
+        {% endfor %}
+      </ul>
 
-    <div class="c-callout u-align-centre">
-      <h4 class="c-callout__title">{{ callout_social }}</h4>
-      <a href="#" class="c-btn c-btn--primary" alt="Contattaci">Contattaci</a>
+      <div class="c-callout u-align-centre">
+        <h4 class="c-callout__title">{{ callout_social }}</h4>
+        <a href="#" class="c-btn c-btn--primary" alt="Contattaci">Contattaci</a>
+      </div>
     </div>
-
   </div>
 </div>

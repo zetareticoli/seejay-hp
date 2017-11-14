@@ -1,42 +1,45 @@
 <div class="c-card c-card--coach">
-  <div class="container--fixed">
+  <div class="">
     <h2 class="c-card__title">
       <span class="c-card__evidence">
         {{ services.coach.first }}
       </span>
       {{ services.coach.title }}
     </h2>
-    <p class="c-card__intro">{{ services.coach.intro }}</p>
-    <ul class="u-unstyle o-size1/1 o-list o-list--wrap ">
-      {% for icon in services.coach.icons %}
-        <li class="o-list__item u-space-double">
-          <svg class="o-icon o-icon--fluid o-icon-{{ icon.name }}"><use xlink:href="#icon-{{ icon.name }}"></use></svg>
-        </li>
-      {% endfor %}
-    </ul>
-    <ul class="o-list o-list--{{ services.coach.wrap }} o-list--{{ services.coach.layout }}">
-      {% for detail in services.coach.details %}
-        <li class="c-card__detail o-list__item">
-          {% if detail.icon %}
-            <svg class="o-icon o-icon--large"><use xlink:href="{{ detail.icon }}"></use></svg>
-          {% endif %}
-          <h4 class="o-title">
-            {{ detail.title }}
-          </h4>
-          <ul class="u-unstyle o-list--bullet">
-            {% for item in detail.list %}
-              <li class="o-list__item o-bullet">
-                <span class="o-text--small">{{ item.item }}</span>
-              </li>
-            {% endfor %}
-          </ul>
-        </li>
-      {% endfor %}
-    </ul>
 
-    <div class="c-callout u-align-centre">
-      <h4 class="c-callout__title">{{ callout_coach }}</h4>
-      <a href="#" class="c-btn c-btn--primary" alt="Contattaci">Contattaci</a>
+    <div class="c-card__container">
+      <p class="c-card__intro">{{ services.coach.intro }}</p>
+      <ul class="u-unstyle o-size1/1 o-list o-list--wrap ">
+        {% for icon in services.coach.icons %}
+          <li class="o-list__item u-space-double">
+            <svg class="o-icon o-icon--fluid o-icon-{{ icon.name }}"><use xlink:href="#icon-{{ icon.name }}"></use></svg>
+          </li>
+        {% endfor %}
+      </ul>
+      <ul class="o-list o-list--{{ services.coach.wrap }} o-list--{{ services.coach.layout }}">
+        {% for detail in services.coach.details %}
+          <li class="c-card__detail o-list__item">
+            {% if detail.icon %}
+              <svg class="o-icon o-icon--large"><use xlink:href="{{ detail.icon }}"></use></svg>
+            {% endif %}
+            <h4 class="o-title">
+              {{ detail.title }}
+            </h4>
+            <ul class="u-unstyle o-list--bullet">
+              {% for item in detail.list %}
+                <li class="o-list__item o-bullet">
+                  <span class="o-text--small">{{ item.item }}</span>
+                </li>
+              {% endfor %}
+            </ul>
+          </li>
+        {% endfor %}
+      </ul>
+
+      <div class="c-callout u-align-centre">
+        <h4 class="c-callout__title">{{ callout_coach }}</h4>
+        <a href="#" class="c-btn c-btn--primary" alt="Contattaci">Contattaci</a>
+      </div>
     </div>
 
   </div>
