@@ -5,6 +5,7 @@
 
   @include bp(large) {
     float: right;
+    text-align: right;
   }
 
   &__list {
@@ -66,7 +67,6 @@
 
     @include bp(large) {
       display: block;
-      float: left;
       padding-right: 2rem;
       padding-top: .45rem;
       text-align: right;
