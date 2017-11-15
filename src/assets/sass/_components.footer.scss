@@ -22,11 +22,36 @@
   }
 
   &__menu {
-    margin: 4rem 0 1rem;
-    
+    margin-top: 2rem;
+    text-align: center;
+    width: 100%;
+
+    @include bp(large) {
+      margin: 2rem;
+      text-align: right;
+      width: auto;
+    }
+
     .o-link {
       display: inline-block;
-      margin: 0 1rem 1rem 0;
     }
+
+    .o-list__item {
+      display: block;
+      margin-bottom: 2rem;
+
+      @include bp(large) {
+        display: inline-block;
+        margin-bottom: 0;
+        margin-left: 2rem;
+      }
+    }
+  }
+
+  &__label {
+    color: $color-gray-80;
+    font-size: .75rem;
+    margin-bottom: .5rem;
+    text-transform: uppercase;
   }
 }

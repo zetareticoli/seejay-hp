@@ -16,17 +16,12 @@
 
     @include bp(large) {
       margin: 0 auto;
-      max-width: 880px;
       padding-left: 0;
       padding-right: 0;
     }
 
-    @include bp(xlarge) {
-      max-width: 1200px;
-    }
-
     @include bp(xxlarge) {
-      max-width: 1400px;
+      max-width: 1600px;
     }
   }
 }

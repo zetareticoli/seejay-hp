@@ -86,11 +86,13 @@
     }
   }
 
-  .c-card__detail:nth-of-type(3) {
-    order: 4;
-  }
+  @include bp(large) {
+    .c-card__detail:nth-of-type(3) {
+      order: 4;
+    }
 
-  .card__detail:nth-of-type(4) {
-    order: 3;
+    .card__detail:nth-of-type(4) {
+      order: 3;
+    }
   }
 }
