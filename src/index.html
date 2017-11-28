@@ -38,7 +38,19 @@
 
               <div class="c-hero__content">
                 <h1 class="c-hero__title">{{ hero.title }}</h1>
-                <p class="c-hero__intro">{{ hero.intro }}</p>
+                <div class="offices">
+                  <ul class="u-unstyle offices-list">
+                    <li class="office-item">
+                      <span class="office-name"><svg class="o-icon o-icon--inline o-icon--inverse"><use xlink:href="#icon-volcano"></use></svg>Catania</span>
+                    </li>
+                    <li class="office-item">
+                      <span class="office-name"><svg class="o-icon o-icon--inline o-icon--inverse"><use xlink:href="#icon-milan"></use></svg>Milano</span>
+                    </li>
+                    <li class="office-item">
+                      <span class="office-name"><svg class="o-icon o-icon--inline o-icon--inverse"><use xlink:href="#icon-florence"></use></svg>Firenze</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
 
             </div>
@@ -53,12 +65,12 @@
             </div>
           </section>
 
-          <div class="u-align-centre">
-            <h4 class="o-section-title">Cosa facciamo</h4>
-          </div>
-
           <section class="section section--inverse u-space-vertical">
             <div class="container">
+
+              <div class="u-align-centre">
+                <h4 class="o-section-title">Cosa facciamo</h4>
+              </div>
 
               {% include "partials/services-social.html" %}
 

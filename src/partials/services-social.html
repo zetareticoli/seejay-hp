@@ -6,15 +6,15 @@
       </span>
       {{ services.social.title }}
     </h2>
+    <ul class="c-social-icons o-list o-list--wrap u-align-centre">
+      {% for icon in services.social.icons %}
+        <li class="o-list__item u-space-double">
+          <svg class="o-icon o-icon--fluid o-icon-{{ icon.name }}"><use xlink:href="#icon-{{ icon.name }}"></use></svg>
+        </li>
+      {% endfor %}
+    </ul>
     <div class="c-card__container">
       <p class="c-card__intro">{{ services.social.intro }}</p>
-      <ul class="u-unstyle o-size1/1 o-list o-list--wrap">
-        {% for icon in services.social.icons %}
-          <li class="o-list__item u-space-double">
-            <svg class="o-icon o-icon--fluid o-icon-{{ icon.name }}"><use xlink:href="#icon-{{ icon.name }}"></use></svg>
-          </li>
-        {% endfor %}
-      </ul>
       <ul class="c-cycle o-list o-list--wrap o-list--grid">
         {% for detail in services.social.details %}
           <li class="c-card__detail o-list__item">

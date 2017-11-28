@@ -6,32 +6,33 @@
   background-size: cover;
   @include flexbox;
   @include flex-direction(column);
-  font-size: get-vw-bp-small(24px); // $todo - use variable
   @include justify-content(center);
   margin-bottom: 5vh;
   min-height: 350px;
-  padding: 8vw 10vw;
+  padding: 4rem 2rem;
   z-index: 999;
+  box-shadow: 0 0 30px rgba(0,0,0,.05);
 
   @include bp(medium) {
-    font-size: get-vw-bp-medium(36px); // $todo - use variable
+    padding: 4rem;
   }
-
+  
   @include bp(large) {
-    font-size: get-vw-bp-large(36px); // $todo - use variable
+    padding: 8rem 10rem;
+    font-size: 2.25rem;
   }
 
   &__text {
     font-family: $font-serif;
     line-height: 1.25;
-    font-size: get-vw-bp-small(20px); // $todo - use variable
+    font-size: 1.25rem; // $todo - use variable
 
     @include bp(medium) {
-      font-size: get-vw-bp-medium(28px); // $todo - use variable
+      font-size: 1.75rem // $todo - use variable
     }
 
     @include bp(large) {
-      font-size: get-vw-bp-large(32px); // $todo - use variable
+      font-size: 2rem // $todo - use variable
     }
   }
 }

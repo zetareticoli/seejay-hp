@@ -61,15 +61,4 @@
       margin: 2rem 0 1rem;
     }
   }
-
-  &__offices {
-    display: none;
-
-    @include bp(large) {
-      display: block;
-      padding-right: 2rem;
-      padding-top: .45rem;
-      text-align: right;
-    }
-  }
 }

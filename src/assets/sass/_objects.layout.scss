@@ -3,6 +3,7 @@
 .container {
   padding: 0 15px; // $todo - use variable
   width: 100%;
+  @include clearfix;
 
   @include bp(medium) {
     padding: 0 30px; // $todo - use variable

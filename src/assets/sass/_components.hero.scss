@@ -30,11 +30,23 @@
   &__content {
     position: absolute;
     bottom: 0;
+    left: 15px;
+    right: 15px;
+
+    @include bp(medium) {
+      left: 30px;
+      right: 30px;
+    }
+
+    @include bp(large) {
+      left: 60px;
+      right: 60px;
+    }
   }
 
   &__payoff {
     font-family: $font-sans;
-    font-size: get-vw-bp-small(32px); // $todo - use variable
+    font-size: 2rem;
     font-style: italic; // $todo - use variable
     font-weight: 700; // $todo - use variable
     color: #FFE25E;
@@ -44,11 +56,11 @@
     z-index: 1;
 
     @include bp(medium) {
-      font-size: get-vw-bp-small(28px); // $todo - use variable
+      font-size: 2rem;
     }
 
     @include bp(large) {
-      font-size: get-vw-bp-large(56px); // $todo - use variable
+      font-size: 3rem;
     }
   }
 
@@ -62,17 +74,16 @@
 
   &__title {
     font-style: italic;
-    font-size: get-vw-bp-small(42px); // $todo - use variable
+    font-size: 2.75rem; // $todo - use variable
     color: $color-white;
     line-height: 1.15;
 
     @include bp(medium) {
-      font-size: get-vw-bp-medium(72px); // $todo - use variable
+      font-size: 4rem;
     }
 
     @include bp(large) {
-      font-size: get-vw-bp-medium(36px); // $todo - use variable
-      width: 70vw;
+      max-width: 70vw;
     }
   }
 
@@ -106,4 +117,38 @@
   font-family: $font-serif;
   font-size: 65%; // $todo - use variable
   font-style: normal;
+}
+
+.offices {
+  display: block;
+  margin-bottom: 5rem;
+}
+
+.office-item {
+  display: inline-block;
+
+  @include bp(large) {
+    margin-right: 2rem;
+  }
+}
+
+.office-name {
+  text-transform: uppercase;
+  color: $color-white;
+  font-family: $font-sans;
+  font-size: .75rem;
+
+  @include bp(large) {
+    font-size: 1rem;
+  }
+
+  .o-icon {
+    width: 1rem;
+    height: 1rem;
+
+    @include bp(large) {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
 }

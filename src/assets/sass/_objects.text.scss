@@ -13,29 +13,18 @@
 .o-paragraph-intro {
   font-family: $font-serif;
   line-height: 1.5;
-  font-size: get-vw-bp-small(18px); // $todo - use variable
-
-  @include bp(medium) {
-    font-size: get-vw-bp-medium(18px); // $todo - use variable
-  }
+  font-size: 1.15rem;
 
   @include bp(large) {
-    font-size: get-vw-bp-large(18px); // $todo - use variable
+    font-size: 1.25rem;
   }
 }
 
 .o-section-title {
-  font-size: get-vw-bp-small(18px); // $todo - use variable
+  font-size: 1.15rem; // $todo - use variable
   font-weight: $font-weight-normal;
   text-transform: uppercase;
-
-  @include bp(medium) {
-    font-size: get-vw-bp-medium(18px); // $todo - use variable
-  }
-
-  @include bp(large) {
-    font-size: get-vw-bp-large(18px); // $todo - use variable
-  }
+  margin-bottom: 3rem;
 
   &--inverse {
     color: $color-white;
@@ -44,17 +33,9 @@
 
 .o-subhead {
   color: $color-navyblue;
-  font-size: get-vw-bp-small(32px); // $todo - use variable
+  font-size: 2rem;
   font-style: italic;
   font-weight: $font-weight-bold;
-
-  @include bp(medium) {
-    font-size: get-vw-bp-medium(32px); // $todo - use variable
-  }
-
-  @include bp(large) {
-    font-size: get-vw-bp-large(32px); // $todo - use variable
-  }
 }
 
 .o-text {
@@ -70,20 +51,8 @@
 
 .o-title {
   color: $color-red;
-  font-size: get-vw-bp-small(24px); // $todo - use variable
+  font-size: 1.5rem;
   font-weight: $font-weight-normal;
-
-  @include bp(medium) {
-    font-size: get-vw-bp-medium(24px); // $todo - use variable
-  }
-
-  @include bp(large) {
-    font-size: get-vw-bp-large(24px); // $todo - use variable
-  }
-
-  @include bp(xlarge) {
-    font-size: get-vw-bp-xlarge(24px); // $todo - use variable
-  }
 }
 
 .o-text-uppercase {

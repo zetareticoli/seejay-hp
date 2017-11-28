@@ -57,23 +57,16 @@
   &__year {
     display: block;
     font-style: italic;
+    font-size: 2rem;
     font-size: get-vw-bp-small(32px);
 
     @include bp(medium) {
-      font-size: get-vw-bp-medium(40px);
+      font-size: 2.5rem;
       padding-right: 4rem;
     }
 
-    @include bp(large) {
-      font-size: get-vw-bp-medium(40px);
-    }
-
     @include bp(xlarge) {
-      font-size: get-vw-bp-large(48px);
-    }
-
-    @include bp(xxlarge) {
-      font-size: get-vw-bp-xlarge(48px);
+      font-size: 3rem;
     }
   }
 
@@ -95,11 +88,11 @@
   &__story {
     font-size: 1.25rem;
     line-height: 1.5;
-    padding-left: 2rem;
+    padding: 0 2rem;
     text-align: left;
 
     @include bp(large) {
-      padding-left: 4rem;
+      padding: 0 4rem;
     }
   }
 

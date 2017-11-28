@@ -19,20 +19,12 @@
     font-family: $font-sans;
     font-style: italic;
     font-weight: 300;
-    font-size: get-vw-bp-small(28px); // $todo - use variable
+    font-size: 1.75rem;
     line-height: 1.15;
 
     @include bp(medium) {
-      font-size: get-vw-bp-medium(36px); // $todo - use variable
+      font-size: 2.25rem;
       margin: 2rem 0;
-    }
-
-    @include bp(large) {
-      font-size: get-vw-bp-large(36px); // $todo - use variable
-    }
-
-    @include bp(xlarge) {
-      font-size: get-vw-bp-xlarge(36px); // $todo - use variable
     }
   }
 }
