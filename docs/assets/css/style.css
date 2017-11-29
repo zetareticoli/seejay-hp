@@ -1074,6 +1074,9 @@ p {
         font-size: 3rem;
         margin-bottom: 3rem;
         padding: 0 4rem; } }
+    @media screen and (min-width: 75rem) {
+      .c-card__title {
+        font-size: 4rem; } }
 
 .c-client .o-list__item {
   margin: 1rem;
@@ -1282,8 +1285,9 @@ p {
     @media screen and (min-width: 46.25rem) {
       .c-hero__title {
         font-size: 4rem; } }
-    @media screen and (min-width: 64rem) {
+    @media screen and (min-width: 75rem) {
       .c-hero__title {
+        font-size: 6rem;
         max-width: 70vw; } }
   .c-hero__intro {
     color: #fff;
@@ -1340,7 +1344,7 @@ p {
   -moz-align-items: center;
   -ms-align-items: center;
   align-items: center;
-  background: #EFEDE6 url("/assets/img/background-intro.png") 0 0 no-repeat;
+  background: #EFEDE6 url("../img/background-intro.png") 0 0 no-repeat;
   background-size: cover;
   display: -webkit-box;
   display: -moz-box;
@@ -1465,7 +1469,7 @@ p {
   .c-timeslot:first-child {
     margin-top: 2rem; }
   .c-timeslot::after {
-    background: url("/assets/img/timeslot-point.svg") 0 0 no-repeat;
+    background: url("../img/timeslot-point.svg") 0 0 no-repeat;
     content: '';
     display: block;
     height: 50px;
