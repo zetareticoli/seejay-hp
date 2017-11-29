@@ -5,6 +5,7 @@ var gulp            = require('gulp'),
     nunjucksRender  = require('gulp-nunjucks-render'),
     sass            = require('gulp-sass'),
     data            = require('gulp-data'),
+    urlAdjuster     = require('gulp-css-url-adjuster'),
     reload          = browserSync.reload;
 var fs              = require('fs');
 
@@ -144,4 +145,13 @@ gulp.task('build', function() {
   return gulp.src(config.dist.files)
 
   .pipe(gulp.dest('docs/'));
+});
+
+// Task: Rewrite Scss files
+gulp.task('urlAdjuster', function () {
+  return gulp.src('docs/assets/css/style.css')
+  .pipe(urlAdjuster({
+    replace:  ['../img/','/assets/img/'],
+  }))
+  .pipe(gulp.dest('docs/assets/css/'));
 });
