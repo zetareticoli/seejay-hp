@@ -2,7 +2,7 @@
 
 .c-intro {
   @include align-items(center);
-  background: #EFEDE6 url('/assets/img/background-intro.png') 0 0 no-repeat;
+  background: #EFEDE6 url('../img/background-intro.png') 0 0 no-repeat;
   background-size: cover;
   @include flexbox;
   @include flex-direction(column);
@@ -16,7 +16,7 @@
   @include bp(medium) {
     padding: 4rem;
   }
-  
+
   @include bp(large) {
     padding: 8rem 10rem;
     font-size: 2.25rem;
