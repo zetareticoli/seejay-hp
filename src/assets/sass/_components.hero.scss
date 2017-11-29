@@ -82,7 +82,7 @@
       font-size: 4rem;
     }
 
-    @include bp(large) {
+    @include bp(xlarge) {
       font-size: 6rem;
       max-width: 70vw;
     }

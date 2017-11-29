@@ -72,5 +72,9 @@
       margin-bottom: 3rem;
       padding: 0 4rem;
     }
+
+    @include bp(xlarge) {
+      font-size: 4rem;
+    }
   }
 }
