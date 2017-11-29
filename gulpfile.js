@@ -60,7 +60,7 @@ gulp.task('template', function(){
   .pipe(nunjucksRender({
     path: ['src']
   }))
-  .pipe(gulp.dest(config.root))
+  .pipe(gulp.dest(config.dist.root))
   .pipe(reload({stream: true}));
 });
 
@@ -115,7 +115,7 @@ gulp.task('watch', function () {
 gulp.task('browser-sync', function() {
   browserSync.init({
     server: {
-      baseDir: config.root,
+      baseDir: config.dist.root,
       ui: {
         port: 8080
       },
@@ -137,4 +137,11 @@ gulp.task('start', ['clean'], function() {
     'watch',
     'browser-sync'
   );
+});
+
+// Task: Docs
+gulp.task('build', function() {
+  return gulp.src(config.dist.files)
+
+  .pipe(gulp.dest('docs/'));
 });

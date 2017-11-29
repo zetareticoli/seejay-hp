@@ -1,5 +1,8 @@
 {
-  "root": "dist/",
+  "dist": {
+    "root"  : "dist/",
+    "files" : "dist/**/*"
+  },
   "assets": {
     "base": "src/assets/",
     "dest": "dist/assets/"
