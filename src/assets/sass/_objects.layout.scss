@@ -1,28 +1,28 @@
 // $LAYOUT --------------------------------------------------------------------/
 
 .container {
-  padding: 0 15px; // $todo - use variable
+  padding: 0 1rem; // $todo - use variable
   width: 100%;
   @include clearfix;
 
   @include bp(medium) {
-    padding: 0 30px; // $todo - use variable
+    padding: 0 2rem; // $todo - use variable
   }
 
   @include bp(large) {
-    padding: 0 60px; // $todo - use variable
+    padding: 0 4rem; // $todo - use variable
   }
 
   &--fixed {
-
     @include bp(large) {
       margin: 0 auto;
       padding-left: 0;
       padding-right: 0;
+      max-width: 1200px;
     }
 
-    @include bp(xxlarge) {
-      max-width: 1600px;
+    @include bp(xlarge) {
+      max-width: 1400px;
     }
   }
 }

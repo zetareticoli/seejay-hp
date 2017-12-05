@@ -26,6 +26,10 @@
   text-transform: uppercase;
   margin-bottom: 3rem;
 
+  @include bp(large) {
+    font-size: 2rem;
+  }
+
   &--inverse {
     color: $color-white;
   }
@@ -53,6 +57,10 @@
   color: $color-red;
   font-size: 1.5rem;
   font-weight: $font-weight-normal;
+
+  @include bp(large) {
+    font-size: 2rem;
+  }
 }
 
 .o-text-uppercase {

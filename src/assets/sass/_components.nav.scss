@@ -1,11 +1,14 @@
 // $NAV -----------------------------------------------------------------------/
 
 .c-nav {
+  position: absolute;
+  right: 1rem;
+  top: 1.5rem;
   overflow: hidden;
 
-  @include bp(large) {
-    float: right;
-    text-align: right;
+  @include bp(medium) {
+    right: 3rem;
+    top: 3rem;
   }
 
   &__list {

@@ -4,7 +4,7 @@
   margin-bottom: 4rem;
 
   @include bp(medium) {
-    margin-bottom: 8rem;
+    margin-bottom: 5rem;
   }
 
   &:last-child {
@@ -18,17 +18,13 @@
     padding: 2rem;
 
     @include bp(large) {
-      padding: 4rem;
+      padding: 2.5rem;
     }
   }
 
   &__detail {
     margin-bottom: 2rem;
     text-align: center;
-
-    @include bp(medium) {
-      margin-bottom: 3rem;
-    }
 
     .o-icon {
       margin-bottom: 1rem;
@@ -45,15 +41,11 @@
     font-family: $font-serif;
     font-style: italic;
     font-size: 1.375rem;
-    line-height: 1.35;
+    line-height: 1.5;
     margin-bottom: 3rem;
 
     @include bp(large) {
-      font-size: 1.5rem;
-    }
-
-    @include bp(xlarge) {
-      font-size: 1.75rem;
+      font-size: 2rem;
     }
   }
 
@@ -62,6 +54,7 @@
     font-weight: $font-weight-normal;
     line-height: 1;
     margin-bottom: 1rem;
+    padding: 0 1.5rem;
 
     @include bp(medium) {
       font-size: 2.5rem;
@@ -70,7 +63,6 @@
     @include bp(large) {
       font-size: 3rem;
       margin-bottom: 3rem;
-      padding: 0 4rem;
     }
 
     @include bp(xlarge) {
