@@ -133,16 +133,16 @@
       "tech_intro": "Adoperiamo i principali linguaggi di programmazione e le tecnologie più innovative disponibili sul mercato. Abbiamo un grande vantaggio: non solo sviluppiamo prodotti ex-novo, in base alle richieste dei clienti, ma utilizziamo anche prodotti proprietari Seejay, introvabili altrove.",
       "tech": [
         {
-          "title": "Social Wall",
-          "icon": ""
+          "title": "Twitter Promote",
+          "icon": "assets/img/pic-twitter.png"
         },
         {
-          "title": "Twitter Promote",
-          "icon": ""
+          "title": "Social Wall",
+          "icon": "assets/img/pic-wall1.png"
         },
         {
           "title": "Instagram Booster",
-          "icon": ""
+          "icon": "assets/img/pic-instagram.png"
         }
       ]
     },
