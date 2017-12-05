@@ -2,12 +2,16 @@
 
 .c-hero {
   background-image: linear-gradient(225deg, #FF004E 0%, #FF6600 100%);
-  height: 90vh;
-  padding-top: 3vh;
+  padding-top: 1.5rem;
+  position: relative;
+  color: $color-white;
 
-  @include bp(large) {
+  @include bp(small) {
     height: 80vh;
-    padding: 8vh 4vh 0;
+  }
+
+  @include bp(medium) {
+    padding-top: 3rem;
   }
 
   &::after {
@@ -28,14 +32,11 @@
   }
 
   &__content {
-    position: absolute;
-    bottom: 0;
-    left: 15px;
-    right: 15px;
-
-    @include bp(medium) {
-      left: 30px;
-      right: 30px;
+    @include bp(small) {
+      position: absolute;
+      bottom: 0;
+      left: 1.5rem;
+      right: 1.5rem;
     }
 
     @include bp(large) {
@@ -50,10 +51,11 @@
     font-style: italic; // $todo - use variable
     font-weight: 700; // $todo - use variable
     color: #FFE25E;
-    letter-spacing: -1px;
+    letter-spacing: 0;
     line-height: 0.9;
     position: relative;
     z-index: 1;
+    margin-bottom: 3rem;
 
     @include bp(medium) {
       font-size: 2rem;
@@ -74,9 +76,10 @@
 
   &__title {
     font-style: italic;
-    font-size: 2.75rem; // $todo - use variable
+    font-size: 2.25rem; // $todo - use variable
     color: $color-white;
     line-height: 1.15;
+    margin-bottom: 1.5rem;
 
     @include bp(medium) {
       font-size: 4rem;
@@ -104,14 +107,6 @@
   }*/
 }
 
-.payoff__row {
-  display: block;
-
-  &:last-child {
-    padding-left: 5%; // $todo - use variable
-  }
-}
-
 .payoff__ampersand {
   color: $color-white;
   font-family: $font-serif;
@@ -125,21 +120,17 @@
 }
 
 .office-item {
+  margin-right: 1rem;
   display: inline-block;
-
-  @include bp(large) {
-    margin-right: 2rem;
-  }
 }
 
 .office-name {
-  text-transform: uppercase;
   color: $color-white;
   font-family: $font-sans;
-  font-size: .75rem;
+  font-size: 1rem;
 
   @include bp(large) {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   .o-icon {

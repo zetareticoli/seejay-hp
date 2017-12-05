@@ -25,29 +25,27 @@
 
           <section class="section c-hero">
             <div class="container">
+              <img class="c-brand" src="assets/img/brand.svg">
+              <div class="c-hero__payoff">
+                <span>social jokers</span>
+                <span class="payoff__ampersand">&amp;</span>
+                <span>developers</span>
+              </div>
 
               {% include "partials/nav.html" %}
 
-              <div class="c-hero__payoff">
-                <span class="payoff__row">social jokers</span>
-                <span class="payoff__row">
-                  <span class="payoff__ampersand">&amp;</span>
-                  <span class="payoff__sans">developers</span>
-                </span>
-              </div>
-
-              <div class="c-hero__content">
+              <div class="c-hero__content container--fixed">
                 <h1 class="c-hero__title">{{ hero.title }}</h1>
                 <div class="offices">
                   <ul class="u-unstyle offices-list">
                     <li class="office-item">
-                      <span class="office-name"><svg class="o-icon o-icon--inline o-icon--inverse"><use xlink:href="#icon-volcano"></use></svg>Catania</span>
+                      <span class="office-name">Catania</span>
                     </li>
                     <li class="office-item">
-                      <span class="office-name"><svg class="o-icon o-icon--inline o-icon--inverse"><use xlink:href="#icon-milan"></use></svg>Milano</span>
+                      <span class="office-name">Milano</span>
                     </li>
                     <li class="office-item">
-                      <span class="office-name"><svg class="o-icon o-icon--inline o-icon--inverse"><use xlink:href="#icon-florence"></use></svg>Firenze</span>
+                      <span class="office-name">Firenze</span>
                     </li>
                   </ul>
                 </div>
