@@ -26,13 +26,8 @@
   }
 
   &--fluid {
-    height: 5vw;
-    width: 5vw;
-
-    @include bp(xlarge) {
-      height: 3vw;
-      width: 3vw;
-    }
+    height: 3vw;
+    width: 3vw;
   }
 
   &--inline {
