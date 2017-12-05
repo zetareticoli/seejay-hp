@@ -83,11 +83,10 @@
     }
 
     @include bp(xlarge) {
-      font-size: 6rem;
-      max-width: 70vw;
+      font-size: 4.5rem;
     }
   }
-
+/*
   &__intro {
     color: $color-white;
     line-height: 1.25; // $todo - use variable
@@ -102,7 +101,7 @@
     @include bp(large) {
       font-size: get-vw-bp-large(36px); // $todo - use variable
     }
-  }
+  }*/
 }
 
 .payoff__row {
