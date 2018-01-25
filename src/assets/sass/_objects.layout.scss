@@ -92,12 +92,21 @@
 
 .o-list--bullet {
   @include bp(large){
-      font-size: 1.2rem;
-      line-height: 1.25;
+    line-height: 1.25;
   }
 
   .o-list__item {
     margin-bottom: .5rem; // $todo - use variable
     position: relative;
+    &::before {
+      display: inline-block;
+      content: '';
+      width: 6px;
+      height: 6px;
+      margin-right: 1rem;
+      margin-left: -1.5rem;
+      background-color: $color-red;
+      vertical-align: middle;
+    }
   }
 }

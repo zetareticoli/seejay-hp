@@ -14,7 +14,8 @@
       "intro": "Proponiamo strumenti e soluzioni proprietarie e tecnologicamente all’avanguardia in grado di far crescere il tuo business.",
       "details": [
         {
-          "title": "01. Strategy",
+          "number": "01",
+          "title": "Strategy",
           "list": [
             {
               "item": "Definizione strategica, gestione piani comunicazione e marketing su social media"
@@ -26,7 +27,8 @@
           "icon": "#icon-strategy"
         },
         {
-          "title": "02. Engagement",
+          "number": "02",
+          "title": "Engagement",
           "list": [
             {
               "item": "Social Wall"
@@ -50,7 +52,8 @@
           "icon": "#icon-engagement"
         },
         {
-          "title": "03. Caring",
+          "number": "03",
+          "title": "Caring",
           "list": [
             {
               "item": "Chatbot"
@@ -65,7 +68,8 @@
           "icon": "#icon-caring"
         },
         {
-          "title": "04. Intelligence",
+          "number": "04",
+          "title": "Intelligence",
           "list": [
             {
               "item": "Social Analytics, monitoraggio e reportistica"

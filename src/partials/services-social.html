@@ -15,22 +15,31 @@
     </ul>
     <div class="c-card__container">
       <p class="c-card__intro">{{ services.social.intro }}</p>
-      <ul class="c-cycle o-list o-list--wrap o-list--grid">
+      <ul class="c-cycle o-list o-list--wrap">
         {% for detail in services.social.details %}
-          <li class="c-card__detail o-list__item">
-            {% if detail.icon %}
-              <svg class="o-icon o-icon--large"><use xlink:href="{{ detail.icon }}"></use></svg>
-            {% endif %}
-            <h4 class="o-title">
-              {{ detail.title }}
-            </h4>
-            <ul class="u-unstyle">
-              {% for item in detail.list %}
-                <li class="o-list__item">
-                  <span>{{ item.item }}</span>
-                </li>
-              {% endfor %}
-            </ul>
+          <li class="u-unstyle c-card__detail o-list__item o-size-1/4@lg">
+            <div class="c-cycle-item">
+              <div class="c-cycle__block">
+                <div class="c-cycle__detail">
+                  {% if detail.icon %}
+                    <svg class="c-cycle__icon o-icon o-icon--large"><use xlink:href="{{ detail.icon }}"></use></svg>
+                  {% endif %}
+                  <span class="c-cycle__number">{{ detail.number }}</span>
+                  <h4 class="c-cycle__title o-title">
+                    {{ detail.title }}
+                  </h4>
+                </div>
+              </div>
+              <div class="c-cycle__content">
+                <ul class="u-unstyle o-list--bullet">
+                  {% for item in detail.list %}
+                    <li class="o-list__item">
+                      {{ item.item }}
+                    </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
           </li>
         {% endfor %}
       </ul>
