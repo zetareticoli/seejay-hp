@@ -1,53 +1,127 @@
-.c-cycle {
-  /*
-  background: $color-white url('../img/cycle-line.svg') left top no-repeat;
-  margin-top: 1rem;
+.c-cycle-item {
+  position: relative;
 
-  @include bp(large) {
-    background: $color-white url('../img/cycle-arrows.svg') center top no-repeat;
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
   }
-  */
 
-  .c-card__detail {
+  .c-cycle__content {
+    float: left;
     width: 100%;
+    background: transparent;
+    position: relative;
     text-align: left;
+    padding: 0 2.5rem 0 3.5rem;
 
     @include bp(medium) {
-      width: 50%;
+      padding-left: 2.5rem;
     }
 
-    @include bp(xlarge) {
-      width: 25%;
-    }
-
-    .o-title {
-      margin-bottom: 1rem;
-    }
-
-    .o-list__item {
-      font-size: 1.25rem;
-      line-height: 1.5;
-      margin-bottom: .1rem;
-      padding-left: 1.375rem;
+    &::before {
+      content: '';
+      width: 2px;
+      height: 100%;
+      display: block;
+      position: absolute;
+      z-index: 0;
+      left: 0;
+      bottom: 0;
+      background-color: $background-light-color;
 
       @include bp(medium) {
-        margin-right: 2rem;
-      }
-
-      &:before {
-        display: inline-block;
-        content: '';
-        width: 6px;
-        height: 6px;
-        margin-right: 1rem;
-        margin-left: -1.5rem;
         background: $color-red;
-        vertical-align: middle;
+        border-radius: 50%;
+        border: 10px solid $color-white;
+        width: 1.5rem;
+        height: 1.5rem;
+        right: 0;
+        margin: 0 auto;
+        top: -50px;
       }
+    }
+  }
+}
 
-      @include bp(large) {
-        margin-bottom: .5rem;
-      }
+.c-cycle__number {
+  position: absolute;
+  color: $color-gray-30;
+  font-size: 6rem;
+  font-family: $font-sans;
+  left: -2rem;
+  z-index: 1;
+}
+
+.c-cycle__title,
+.c-cycle__icon {
+  position: relative;
+  z-index: 2;
+}
+
+.c-cycle__title {
+  margin-bottom: 0;
+  font-size: 5vw;
+
+  @include bp(medium) {
+    font-size: 2vw;
+  }
+}
+
+.c-cycle__detail {
+  background-color: $color-white;
+  border-radius: $base-radius * 2;
+  box-shadow: 0 0 20px $color-gray-40;
+  padding: 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.c-cycle__block {
+  float: left;
+  width: 100%;
+  padding: 1rem;
+  position: relative;
+
+  @media screen and (max-width: 46.25rem) {
+    padding-left: 2rem;
+
+    &::before {
+      content: '';
+      display: block;
+      background: $color-red;
+      border-radius: 50%;
+      border: 10px solid $color-white;
+      width: 1.5rem;
+      height: 1.5rem;
+      left: -1.5rem;
+      position: absolute;
+      margin: 0 auto;
+      z-index: 10;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  @include bp(medium) {
+    margin-bottom: 3rem;
+  }
+
+  &:after {
+    content: '';
+    width: 2px;
+    height: 100%;
+    display: block;
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    bottom: 0;
+    background-color: $background-light-color;
+
+    @include bp(medium) {
+      width: 100%;
+      height: 2px;
+      bottom: -1.25rem;
     }
   }
 }
